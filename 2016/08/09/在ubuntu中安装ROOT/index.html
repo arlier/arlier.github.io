@@ -83,7 +83,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/08/09/在ubuntu中安装ROOT/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="我本地的ubuntu已经安装好了ROOT，这次想尝试一下在腾讯云主机上安装，熟悉一下安装过程并体验一下远程运行的效果。之前安装过几次ROOT也是情况不断，由于ROOT版本和ubuntu内核版本以及依赖包的问题并不能算完美，虽然最后都能用。在有了一些经验之后往往就不会选择最新的版本，毕竟稳定性和兼容性才是最重要的。以下是安装过程,主要参考https://root.cern.ch/building-r">
-<meta property="og:updated_time" content="2016-08-09T07:57:45.661Z">
+<meta property="og:updated_time" content="2016-08-09T08:52:25.254Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在ubuntu中安装ROOT">
 <meta name="twitter:description" content="我本地的ubuntu已经安装好了ROOT，这次想尝试一下在腾讯云主机上安装，熟悉一下安装过程并体验一下远程运行的效果。之前安装过几次ROOT也是情况不断，由于ROOT版本和ubuntu内核版本以及依赖包的问题并不能算完美，虽然最后都能用。在有了一些经验之后往往就不会选择最新的版本，毕竟稳定性和兼容性才是最重要的。以下是安装过程,主要参考https://root.cern.ch/building-r">
@@ -325,8 +325,9 @@
 <h2 id="远程图形界面"><a href="#远程图形界面" class="headerlink" title="远程图形界面"></a>远程图形界面</h2><p>ROOT需要经常画图，下一个问题就是如何连接远程图形界面。如果直接运行画图命令会出现<br><code>DISPLAY not set, setting it to 202.122.36.33:0.0</code></p>
 <ul>
 <li>安装<code>apt-get install x11-utils</code></li>
-<li>使用xmanager的xmanager-passive，连接时在xshell选择转发x11的display为localhost:0.0<br>就可以看到图形界面连接成功·····xshell看起来也的确不错！</li>
+<li>使用xmanager的xmanager-passive，连接时在xshell选择转发x11的display为localhost:0.0</li>
 </ul>
+<p>就可以看到图形界面连接成功·····xshell看起来也的确不错！此时使用xshell和xftp就可以方便地进行文件传输了。</p>
 
       
     </div>
