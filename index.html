@@ -441,6 +441,13 @@
 <h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /home/myroot/root</div><div class="line">sudo ./configure --all  <span class="comment">//一定要sudo······</span></div></pre></td></tr></table></figure>
 <p>命令行提示成功：To build ROOT type:   make<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo make  <span class="comment">//一定要sudo······</span></div></pre></td></tr></table></figure></p>
 <p>然后就等吧，服务器1g的内存，估计要好久才能编译好~</p>
+<h2 id="终于好了"><a href="#终于好了" class="headerlink" title="终于好了"></a>终于好了</h2><p>看到了提示<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">============================================================</div><div class="line">===                ROOT BUILD SUCCESSFUL.                ===</div><div class="line">=== Run 'source bin/thisroot.[c]sh' before starting ROOT ===</div><div class="line">============================================================</div></pre></td></tr></table></figure></p>
+<p>配置路径并启动<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">source /home/myroot/root/bin/thisroot.sh</div><div class="line">root -l</div></pre></td></tr></table></figure></p>
+<h2 id="远程图形界面"><a href="#远程图形界面" class="headerlink" title="远程图形界面"></a>远程图形界面</h2><p>ROOT需要经常画图，下一个问题就是如何连接远程图形界面。如果直接运行画图命令会出现<br><code>DISPLAY not set, setting it to 202.122.36.33:0.0</code></p>
+<ul>
+<li>安装<code>apt-get install x11-utils</code></li>
+<li>使用xmanager的xmanager-passive，连接时在xshell选择转发x11的display为localhost:0.0<br>就可以看到图形界面连接成功·····xshell看起来也的确不错！</li>
+</ul>
 
           
         
