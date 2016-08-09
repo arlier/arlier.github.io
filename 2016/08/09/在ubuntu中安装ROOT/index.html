@@ -83,7 +83,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/08/09/在ubuntu中安装ROOT/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="我本地的ubuntu已经安装好了ROOT，这次想尝试一下在腾讯云主机上安装，熟悉一下安装过程并体验一下远程运行的效果。之前安装过几次ROOT也是情况不断，由于ROOT版本和ubuntu内核版本以及依赖包的问题并不能算完美，虽然最后都能用。在有了一些经验之后往往就不会选择最新的版本，毕竟稳定性和兼容性才是最重要的。以下是安装过程,主要参考https://root.cern.ch/building-r">
-<meta property="og:updated_time" content="2016-08-09T08:52:25.254Z">
+<meta property="og:updated_time" content="2016-08-09T09:07:33.500Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在ubuntu中安装ROOT">
 <meta name="twitter:description" content="我本地的ubuntu已经安装好了ROOT，这次想尝试一下在腾讯云主机上安装，熟悉一下安装过程并体验一下远程运行的效果。之前安装过几次ROOT也是情况不断，由于ROOT版本和ubuntu内核版本以及依赖包的问题并不能算完美，虽然最后都能用。在有了一些经验之后往往就不会选择最新的版本，毕竟稳定性和兼容性才是最重要的。以下是安装过程,主要参考https://root.cern.ch/building-r">
@@ -316,6 +316,7 @@
       
         <p>我本地的ubuntu已经安装好了ROOT，这次想尝试一下在腾讯云主机上安装，熟悉一下安装过程并体验一下远程运行的效果。之前安装过几次ROOT也是情况不断，由于ROOT版本和ubuntu内核版本以及依赖包的问题并不能算完美，虽然最后都能用。在有了一些经验之后往往就不会选择最新的版本，毕竟稳定性和兼容性才是最重要的。<br>以下是安装过程,主要参考<a href="https://root.cern.ch/building-root" target="_blank" rel="external">https://root.cern.ch/building-root</a></p>
 <h2 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install subversion</div><div class="line">sudo mkdir myroot</div><div class="line">cd myroot</div><div class="line">wget https:<span class="comment">//root.cern.ch/download/root_v5.34.34.source.tar.gz</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install git dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev \</div><div class="line">        libxft-dev libxext-dev</div><div class="line">sudo apt-get install gfortran libssl-dev libpcre3-dev \</div><div class="line">                xlibmesa-glu-dev libglew1<span class="number">.5</span>-dev libftgl-dev \</div><div class="line">                libmysqlclient-dev libfftw3-dev cfitsio-dev \</div><div class="line">                graphviz-dev libavahi-compat-libdnssd-dev \</div><div class="line">                libldap2-dev python-dev libxml2-dev libkrb5-dev \</div><div class="line">                libgsl0-dev libqt4-dev</div></pre></td></tr></table></figure>
 <h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /home/myroot/root</div><div class="line">sudo ./configure --all  <span class="comment">//一定要sudo······</span></div></pre></td></tr></table></figure>
 <p>命令行提示成功：To build ROOT type:   make<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo make  <span class="comment">//一定要sudo······</span></div></pre></td></tr></table></figure></p>
@@ -327,7 +328,7 @@
 <li>安装<code>apt-get install x11-utils</code></li>
 <li>使用xmanager的xmanager-passive，连接时在xshell选择转发x11的display为localhost:0.0</li>
 </ul>
-<p>就可以看到图形界面连接成功·····xshell看起来也的确不错！此时使用xshell和xftp就可以方便地进行文件传输了。</p>
+<p>就可以看到图形界面连接成功·····xshell看起来也的确不错！此时使用xshell和xftp的ctrl + alt + f新建传输窗口就可以方便地进行文件传输了。</p>
 
       
     </div>
