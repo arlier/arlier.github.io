@@ -77,16 +77,16 @@
 
 
 
-<meta name="description" content="呵呵">
+<meta name="description" content="完美在装完macbuntu并完成相应的美化和设置之后，我非常肯定ubuntu是我现在最喜欢的系统。就个人体验而言，界面简介，可控制的东西非常多，相比windows没有烦人的弹窗。这是安装好之后的效果：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="安装macbuntu">
 <meta property="og:url" content="http://yoursite.com/2016/08/10/安装macbuntu/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="呵呵">
-<meta property="og:updated_time" content="2016-08-10T04:25:45.957Z">
+<meta property="og:description" content="完美在装完macbuntu并完成相应的美化和设置之后，我非常肯定ubuntu是我现在最喜欢的系统。就个人体验而言，界面简介，可控制的东西非常多，相比windows没有烦人的弹窗。这是安装好之后的效果：">
+<meta property="og:updated_time" content="2016-08-10T13:52:27.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安装macbuntu">
-<meta name="twitter:description" content="呵呵">
+<meta name="twitter:description" content="完美在装完macbuntu并完成相应的美化和设置之后，我非常肯定ubuntu是我现在最喜欢的系统。就个人体验而言，界面简介，可控制的东西非常多，相比windows没有烦人的弹窗。这是安装好之后的效果：">
 
 
 
@@ -314,7 +314,10 @@
       
 
       
-        <p>呵呵</p>
+        <h1 id="完美"><a href="#完美" class="headerlink" title="完美"></a>完美</h1><p>在装完macbuntu并完成相应的美化和设置之后，我非常肯定ubuntu是我现在最喜欢的系统。就个人体验而言，界面简介，可控制的东西非常多，相比windows没有烦人的弹窗。这是安装好之后的效果：<a id="more"></a><br><a href=""></a><a href=""></a></p>
+<h1 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h1><p>这次安装macbuntu，是因为之前在夏令营看到有人安装，感觉好好看的样子～具体的过程是参考<br>这篇文章：<a href="http://www.linuxdiyf.com/linux/21041.html" target="_blank" rel="external">http://www.linuxdiyf.com/linux/21041.html</a> 一直按照教程往下走就可以啦。</p>
+<h1 id="安装完macbuntu之后"><a href="#安装完macbuntu之后" class="headerlink" title="安装完macbuntu之后"></a>安装完macbuntu之后</h1><p>我发现一般安装软件最好执行sudo apt-get update，不然容易出错，加上sudo；<br>在执行安装命令<code>sudo apt-get install macbuntu-os-icons-lts-v7</code>之后提示出错：<br><code>gzip: stdout: No space left on device</code><br>网上搜索得知这是/boot空间不足，当时安装的时候只给boot分了200M，解决问题最简单的办法就是把一些没用的内核给删了（当然也可以磁盘管理来增加/root的容量）：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ls /boot      <span class="comment">//罗列</span></div><div class="line">uname -a   <span class="comment">//查看当前内核</span></div><div class="line">sudo apt-get remove linux-image<span class="number">-4.4</span><span class="number">.0</span><span class="number">-21</span>-generic  <span class="comment">//删除内核</span></div></pre></td></tr></table></figure></p>
+<p>最后，用ubuntu自带的优化工具就可以设置plank dock开机自启动。</p>
 
       
     </div>
