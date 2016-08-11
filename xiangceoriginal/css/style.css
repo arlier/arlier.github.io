@@ -1,0 +1,147 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: 'Roboto';
+}
+
+.center-block, .carrousel, .carrousel .wrapper {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.gallery {
+  list-style: none;
+}
+
+.portrait {
+  width: 150px;
+  box-shadow: 0 0 3px #555;
+  background-color: #FFF;
+  padding: 5px;
+  margin: 7px 0px 0px 7px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.portrait:hover {
+  -moz-transform: scale(1.04, 1.04);
+  -ms-transform: scale(1.04, 1.04);
+  -webkit-transform: scale(1.04, 1.04);
+  transform: scale(1.04, 1.04);
+  box-shadow: 0 0 5px #555;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.portrait .pic {
+  width: 100%;
+  margin: 5px 0;
+}
+.portrait .date {
+  font-size: 18px;
+  font-weight: normal;
+}
+.portrait .foot {
+  font-size: 11px;
+}
+.portrait .foot .heart {
+  margin-left: 4px;
+}
+
+.carrousel {
+  position: fixed;
+  background-color: rgba(10, 10, 10, 0.8);
+  display: none;
+}
+.carrousel .wrapper {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  /*.loading{
+    color: #FFF;
+    font-size: 24px;
+    margin: 40% 40%;
+    display: none;
+  }*/
+}
+.carrousel .wrapper > img {
+  width: 100%;
+}
+
+.close {
+  cursor: pointer;
+  color: #FF1B1B;
+  position: absolute;
+  top: 40px;
+  right: 150px;
+  font-size: 180px;
+}
+.close:hover {
+  font-size: 200px;
+  color: #DDD;
+}
+
+.backbutton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#eae0c2;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:3px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	padding:7px 24px;
+	text-decoration:none;
+}
+.backbutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color:#ccc2a6;
+}
+.backbutton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.mywords {
+  background-color:transparent;
+  	-moz-border-radius:6px;
+  	-webkit-border-radius:6px;
+  	border-radius:6px;
+  	border:1px solid #268a16;
+  	display:inline-block;
+  	cursor:none;
+  	color:#111111;
+  	font-family:“微软雅黑”;
+  	font-size:15px;
+  	padding:6px 24px;
+  	text-decoration:none;
+}
