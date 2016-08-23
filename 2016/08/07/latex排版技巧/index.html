@@ -87,7 +87,7 @@
 <meta property="og:description" content="这篇博客的目的主要是记录我在日常使用$\LaTeX$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
 
 公式编号subequations.160807 为了让一个公式的几个子公式处于相同的标号内，以abcd或者1234在内部区分，形成类似于1.1a;1.1b;1.1c;1.1d的效果，使用amsmath宏包中的subequations环境代码如下：123456">
-<meta property="og:updated_time" content="2016-08-17T04:44:17.908Z">
+<meta property="og:updated_time" content="2016-08-23T02:22:14.377Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="$\LaTeX$排版技巧">
 <meta name="twitter:description" content="这篇博客的目的主要是记录我在日常使用$\LaTeX$排版过程中遇到的具体问题以及最后的解决办法，方便以后的查阅。目前计划以时间顺序记录。
@@ -273,7 +273,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-07T22:03:16+08:00" content="2016-08-07">
+            <time itemprop="dateCreated" datetime="2016-08-07T22:03:16-08:00" content="2016-08-07">
               2016-08-07
             </time>
           </span>
@@ -329,6 +329,7 @@
 <h3 id="text-160810"><a href="#text-160810" class="headerlink" title="\text.160810"></a>\text.160810</h3><p>使用命令\text{words}可以在公式中插入文字，这样做和插入字母不一样；尤其是在插入单位的时候需要正体字母。</p>
 <h3 id="gtrsim-和-geq-和-geqslant-160810"><a href="#gtrsim-和-geq-和-geqslant-160810" class="headerlink" title="$\gtrsim$和$\geq$和$\geqslant $.160810"></a>$\gtrsim$和$\geq$和$\geqslant $.160810</h3><p>这几个符号看起来很像，一般在<a href="http://latex.codecogs.com/eqneditor/editor.php" target="_blank" rel="external">codecogs</a>就能区分出来，如果找不到，就在 <a href="http://detexify.kirelabs.org/classify.html" target="_blank" rel="external">detexify</a>手写很快就能找到，记得加上对应的package！</p>
 <h3 id="单行公式换行-160817"><a href="#单行公式换行-160817" class="headerlink" title="单行公式换行.160817"></a>单行公式换行.160817</h3><p>\begin{split} &amp; \end{split}</p>
+<h3 id="带边框文本-160823"><a href="#带边框文本-160823" class="headerlink" title="带边框文本.160823"></a>带边框文本.160823</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">\usepackage[linewidth=1pt]&#123;mdframed&#125;   </div><div class="line">\begin&#123;mdframed&#125;</div><div class="line">\lipsum[2]</div><div class="line">\end&#123;mdframed&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
