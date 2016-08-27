@@ -77,16 +77,19 @@
 
 
 
-<meta name="description" content="树莓派3b">
+<meta name="description" content="最新的树莓派3b，带wifi，蓝牙，HDMI，看起来就比较好玩~树莓派只有HDMI的视频输出，我这边只有一个VGA的显示器，于是果断淘宝弄了一个转接头；到手之后我刷了一个国产的固件，结果开机之后没反应，我以为是转接头的问题，只能等待有个HDMI显示器再玩了。。。不开心，不开心
+今天早上突然想到或许是固件的问题，于是刷了个官方的rasbian固件，果然就好了！之后远程登录，连接服务器，一切正常；再给">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的树莓派">
 <meta property="og:url" content="http://yoursite.com/2016/08/23/我的树莓派/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="树莓派3b">
-<meta property="og:updated_time" content="2016-08-24T00:21:46.982Z">
+<meta property="og:description" content="最新的树莓派3b，带wifi，蓝牙，HDMI，看起来就比较好玩~树莓派只有HDMI的视频输出，我这边只有一个VGA的显示器，于是果断淘宝弄了一个转接头；到手之后我刷了一个国产的固件，结果开机之后没反应，我以为是转接头的问题，只能等待有个HDMI显示器再玩了。。。不开心，不开心
+今天早上突然想到或许是固件的问题，于是刷了个官方的rasbian固件，果然就好了！之后远程登录，连接服务器，一切正常；再给">
+<meta property="og:updated_time" content="2016-08-27T02:56:42.049Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的树莓派">
-<meta name="twitter:description" content="树莓派3b">
+<meta name="twitter:description" content="最新的树莓派3b，带wifi，蓝牙，HDMI，看起来就比较好玩~树莓派只有HDMI的视频输出，我这边只有一个VGA的显示器，于是果断淘宝弄了一个转接头；到手之后我刷了一个国产的固件，结果开机之后没反应，我以为是转接头的问题，只能等待有个HDMI显示器再玩了。。。不开心，不开心
+今天早上突然想到或许是固件的问题，于是刷了个官方的rasbian固件，果然就好了！之后远程登录，连接服务器，一切正常；再给">
 
 
 
@@ -314,7 +317,10 @@
       
 
       
-        <p>树莓派3b</p>
+        <p>最新的树莓派3b，带wifi，蓝牙，HDMI，看起来就比较好玩~树莓派只有HDMI的视频输出，我这边只有一个VGA的显示器，于是果断淘宝弄了一个转接头；到手之后我刷了一个国产的固件，结果开机之后没反应，我以为是转接头的问题，只能等待有个HDMI显示器再玩了。。。不开心，不开心</p>
+<p>今天早上突然想到或许是固件的问题，于是刷了个官方的rasbian固件，果然就好了！之后远程登录，连接服务器，一切正常；再给系统装好中文字体，安装一个音乐播放器，现在已经可以玩了。在播放音乐的时候耳机插口老是没有声音，在网上爬了很多帖子才明白，由于我的转接器只有视频没有音频而树莓派的音频输出设置在了HDMI所以耳机没声音。解决办法就是:<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">amixer cset numid=<span class="number">3</span> <span class="number">2</span>  </div><div class="line">这里将输出设置为<span class="number">2</span>，也就是HDMI。</div><div class="line">将输出设置为<span class="number">1</span>将切换到模拟信号（也就是耳机接口）。</div><div class="line">默认的设置为<span class="number">0</span>，代表自动选择。</div></pre></td></tr></table></figure></p>
+<p>树莓派系统配置命令：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo raspi-config</div></pre></td></tr></table></figure></p>
+<p>最后我还发现了非常好用的计划任务crontab<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">crontab -e</div><div class="line"> minute hour day month dayofweek command</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -376,8 +382,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/23/backupallmywork/" rel="prev" title="backupallmywork">
-                backupallmywork <i class="fa fa-chevron-right"></i>
+              <a href="/2016/08/23/backupallmywork/" rel="prev" title="back_up_all_my_work">
+                back_up_all_my_work <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
