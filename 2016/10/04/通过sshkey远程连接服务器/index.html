@@ -61,7 +61,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="sshkey,远程连接," />
 
 
 
@@ -77,15 +77,19 @@
 
 
 
-<meta name="description" content="能者劳而巧者忧，无能者无所求，饱食而遨游。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mapping the observed world to our imagination">
-<meta property="og:url" content="http://yoursite.com/archives/2016/page/5/index.html">
+<meta name="description" content="生产秘钥对：  ssh-keygen –t rsa –P ‘’
+将公钥复制到服务器  ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@server  //$HOME/.ssh/id_rsa.pub 是刚才生成的公钥的路径  在服务器把id_rsa.pub追加到授权的key里面去。  cat ~/id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authori">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过sshkey远程连接服务器">
+<meta property="og:url" content="http://yoursite.com/2016/10/04/通过sshkey远程连接服务器/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="能者劳而巧者忧，无能者无所求，饱食而遨游。">
+<meta property="og:description" content="生产秘钥对：  ssh-keygen –t rsa –P ‘’
+将公钥复制到服务器  ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@server  //$HOME/.ssh/id_rsa.pub 是刚才生成的公钥的路径  在服务器把id_rsa.pub追加到授权的key里面去。  cat ~/id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authori">
+<meta property="og:updated_time" content="2016-10-04T08:45:01.685Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mapping the observed world to our imagination">
-<meta name="twitter:description" content="能者劳而巧者忧，无能者无所求，饱食而遨游。">
+<meta name="twitter:title" content="通过sshkey远程连接服务器">
+<meta name="twitter:description" content="生产秘钥对：  ssh-keygen –t rsa –P ‘’
+将公钥复制到服务器  ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@server  //$HOME/.ssh/id_rsa.pub 是刚才生成的公钥的路径  在服务器把id_rsa.pub追加到授权的key里面去。  cat ~/id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authori">
 
 
 
@@ -106,9 +110,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2016/page/5/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/04/通过sshkey远程连接服务器/"/>
 
-  <title> 归档 | mapping the observed world to our imagination </title>
+  <title> 通过sshkey远程连接服务器 | mapping the observed world to our imagination </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -129,7 +133,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -233,180 +237,166 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-       
-      
-      OK! 目前共计 36 篇日志。 继续努力~  ^_^
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                通过sshkey远程连接服务器
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-04T16:03:30+08:00" content="2016-10-04">
+              2016-10-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
       
       
 
       
+        <h2 id="生产秘钥对："><a href="#生产秘钥对：" class="headerlink" title="生产秘钥对："></a>生产秘钥对：</h2><p>  ssh-keygen –t rsa –P ‘’</p>
+<h2 id="将公钥复制到服务器"><a href="#将公钥复制到服务器" class="headerlink" title="将公钥复制到服务器"></a>将公钥复制到服务器</h2><p>  ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@server  //$HOME/.ssh/id_rsa.pub 是刚才生成的公钥的路径<br>  在服务器把id_rsa.pub追加到授权的key里面去。<br>  cat ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</p>
+<p>  vim ~/.ssh/config  </p>
+<h1 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h1><p> host 远程服务器名 #远程主机名<br> Hostname 10.254.250.117 #ip<br> User xxx #用户名<br> IdentityFile xxx/id_rsa  #刚才生成的私钥路径  </p>
+<h1 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h1><p> ssh Hostname</p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果您认为这篇文章对您有所帮助，请支持！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://7xsihg.com1.z0.glb.clouddn.com/arlierweixin.jpg" alt="arlier WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://7xsihg.com1.z0.glb.clouddn.com/arlierpay.jpg" alt="arlier Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/sshkey/" rel="tag">#sshkey</a>
+          
+            <a href="/tags/远程连接/" rel="tag">#远程连接</a>
+          
+        </div>
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/24/MIT的学术评价体系by文小刚/" itemprop="url">
-              
-                <span itemprop="name">MIT的学术评价体系by文小刚</span>
-              
-            </a>
-        
-      </h1>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/24/谷歌文档和overleaf/" rel="next" title="谷歌文档和overleaf">
+                <i class="fa fa-chevron-left"></i> 谷歌文档和overleaf
+              </a>
+            
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-24T12:59:20+08:00"
-              content="2016-06-24" >
-          06-24
-        </time>
-      </div>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/24/ROOT入门教程/" itemprop="url">
-              
-                <span itemprop="name">ROOT入门教程</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-24T10:19:17+08:00"
-              content="2016-06-24" >
-          06-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/23/hexoblog/" itemprop="url">
-              
-                <span itemprop="name">零基础建立HEXO+github博客的详细教程</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-23T19:06:10+08:00"
-              content="2016-06-23" >
-          06-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/23/exercise/" itemprop="url">
-              
-                <span itemprop="name">我的第一篇博客</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-23T01:10:47+08:00"
-              content="2016-06-23" >
-          06-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2016/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2016/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2016/page/4/">4</a><span class="page-number current">5</span>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -414,6 +404,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -506,11 +500,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
