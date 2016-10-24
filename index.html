@@ -319,11 +319,11 @@
       
         
           
-            <h2 id="生产秘钥对："><a href="#生产秘钥对：" class="headerlink" title="生产秘钥对："></a>生产秘钥对：</h2><p>  ssh-keygen –t rsa –P ‘’</p>
-<h2 id="将公钥复制到服务器"><a href="#将公钥复制到服务器" class="headerlink" title="将公钥复制到服务器"></a>将公钥复制到服务器</h2><p>  ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@server  //$HOME/.ssh/id_rsa.pub 是刚才生成的公钥的路径<br>  在服务器把id_rsa.pub追加到授权的key里面去。<br>  cat ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</p>
-<p>  vim ~/.ssh/config  </p>
-<h1 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h1><p> host 远程服务器名 #远程主机名<br> Hostname 10.254.250.117 #ip<br> User xxx #用户名<br> IdentityFile xxx/id_rsa  #刚才生成的私钥路径  </p>
-<h1 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h1><p> ssh Hostname</p>
+            <h2 id="生产秘钥对："><a href="#生产秘钥对：" class="headerlink" title="生产秘钥对："></a>生产秘钥对：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen –t rsa –P</div></pre></td></tr></table></figure>
+<h2 id="将公钥复制到服务器"><a href="#将公钥复制到服务器" class="headerlink" title="将公钥复制到服务器"></a>将公钥复制到服务器</h2> <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@server  //$HOME/.ssh/id_rsa.pub</div></pre></td></tr></table></figure>
+<p>   是刚才生成的公钥的路径<br>  在服务器把id_rsa.pub追加到授权的key里面去。<br>   <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cat ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</div><div class="line">vim ~/.ssh/config</div></pre></td></tr></table></figure></p>
+<h1 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h1> <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">host //远程服务器名 <span class="comment">#远程主机名  </span></div><div class="line">Hostname <span class="number">10.254</span><span class="number">.250</span><span class="number">.117</span> <span class="comment">#ip  </span></div><div class="line">User xxx <span class="comment">#用户名  </span></div><div class="line">IdentityFile xxx/id_rsa  <span class="comment">#刚才生成的私钥路径</span></div></pre></td></tr></table></figure>
+<h1 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h1><p> ssh Hostname<br>  通过ssh连接服务器好像会让文件夹权限不足，这个还得研究解决。</p>
 
           
         
