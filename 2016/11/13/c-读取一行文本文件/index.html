@@ -77,22 +77,22 @@
 
 
 
-<meta name="description" content="#方法一，指定换行符读取：12345#! /bin/bash  for LINE in `cat /etc/passwd`  do           echo $LINEdone
+<meta name="description" content="方法一，指定换行符读取：12345#! /bin/bash  for LINE in `cat /etc/passwd`  do           echo $LINEdone
 方法二，文件重定向给read处理： 12345#! /bin/bash  cat /etc/passwd | while read LINE  do        echo $LINEdone
-方法三，用read读取文">
+方法三，用read读取文件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="bash读取一行文本文件">
 <meta property="og:url" content="http://yoursite.com/2016/11/13/c-读取一行文本文件/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="#方法一，指定换行符读取：12345#! /bin/bash  for LINE in `cat /etc/passwd`  do           echo $LINEdone
+<meta property="og:description" content="方法一，指定换行符读取：12345#! /bin/bash  for LINE in `cat /etc/passwd`  do           echo $LINEdone
 方法二，文件重定向给read处理： 12345#! /bin/bash  cat /etc/passwd | while read LINE  do        echo $LINEdone
-方法三，用read读取文">
-<meta property="og:updated_time" content="2016-11-13T16:33:54.671Z">
+方法三，用read读取文件">
+<meta property="og:updated_time" content="2016-11-13T16:47:26.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bash读取一行文本文件">
-<meta name="twitter:description" content="#方法一，指定换行符读取：12345#! /bin/bash  for LINE in `cat /etc/passwd`  do           echo $LINEdone
+<meta name="twitter:description" content="方法一，指定换行符读取：12345#! /bin/bash  for LINE in `cat /etc/passwd`  do           echo $LINEdone
 方法二，文件重定向给read处理： 12345#! /bin/bash  cat /etc/passwd | while read LINE  do        echo $LINEdone
-方法三，用read读取文">
+方法三，用read读取文件">
 
 
 
@@ -319,9 +319,9 @@
       
 
       
-        <p>#方法一，指定换行符读取：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"><span class="keyword">for</span> LINE in `cat /etc/passwd`  </div><div class="line"><span class="keyword">do</span>   </div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure></p>
-<p>方法二，文件重定向给read处理：<br> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line">cat /etc/passwd | <span class="keyword">while</span> read LINE  </div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure></p>
-<p>方法三，用read读取文件重定向：<br> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"></div><div class="line"><span class="keyword">while</span> read LINE</div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done &lt; /etc/passwd</div></pre></td></tr></table></figure></p>
+        <h1 id="方法一，指定换行符读取："><a href="#方法一，指定换行符读取：" class="headerlink" title="方法一，指定换行符读取："></a>方法一，指定换行符读取：</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"><span class="keyword">for</span> LINE in `cat /etc/passwd`  </div><div class="line"><span class="keyword">do</span>   </div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
+<h1 id="方法二，文件重定向给read处理："><a href="#方法二，文件重定向给read处理：" class="headerlink" title="方法二，文件重定向给read处理："></a>方法二，文件重定向给read处理：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line">cat /etc/passwd | <span class="keyword">while</span> read LINE  </div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
+<h1 id="方法三，用read读取文件重定向："><a href="#方法三，用read读取文件重定向：" class="headerlink" title="方法三，用read读取文件重定向："></a>方法三，用read读取文件重定向：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"></div><div class="line"><span class="keyword">while</span> read LINE</div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done &lt; /etc/passwd</div></pre></td></tr></table></figure>
 
       
     </div>
