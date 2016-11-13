@@ -61,7 +61,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ubuntu,texlive," />
 
 
 
@@ -77,16 +77,25 @@
 
 
 
-<meta name="description" content="能者劳而巧者忧，无能者无所求，饱食而遨游。">
+<meta name="description" content="为了在本地使用latex和beamer，又重新安装了一遍texlive：
+从镜像站下载安装包1wget http://mirrors.ctan.org/systems/texlive/Images/texlive2016.iso
+国内高校的镜像站也有对应的文件，很容易搜到。
+安装依赖包用来升级和检验文件1sudo apt-get install libdigest-perl-md5-perl pe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubuntu安装texlive2016">
 <meta property="og:url" content="http://yoursite.com/2016/11/13/ubuntu安装texlive2016/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="能者劳而巧者忧，无能者无所求，饱食而遨游。">
-<meta property="og:updated_time" content="2016-11-12T17:47:50.231Z">
+<meta property="og:description" content="为了在本地使用latex和beamer，又重新安装了一遍texlive：
+从镜像站下载安装包1wget http://mirrors.ctan.org/systems/texlive/Images/texlive2016.iso
+国内高校的镜像站也有对应的文件，很容易搜到。
+安装依赖包用来升级和检验文件1sudo apt-get install libdigest-perl-md5-perl pe">
+<meta property="og:updated_time" content="2016-11-13T17:01:26.928Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu安装texlive2016">
-<meta name="twitter:description" content="能者劳而巧者忧，无能者无所求，饱食而遨游。">
+<meta name="twitter:description" content="为了在本地使用latex和beamer，又重新安装了一遍texlive：
+从镜像站下载安装包1wget http://mirrors.ctan.org/systems/texlive/Images/texlive2016.iso
+国内高校的镜像站也有对应的文件，很容易搜到。
+安装依赖包用来升级和检验文件1sudo apt-get install libdigest-perl-md5-perl pe">
 
 
 
@@ -273,6 +282,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -294,7 +322,13 @@
       
 
       
-        
+        <p>为了在本地使用latex和beamer，又重新安装了一遍texlive：</p>
+<h1 id="从镜像站下载安装包"><a href="#从镜像站下载安装包" class="headerlink" title="从镜像站下载安装包"></a>从镜像站下载安装包</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://mirrors.ctan.org/systems/texlive/Images/texlive2016.iso</div></pre></td></tr></table></figure>
+<p>国内高校的镜像站也有对应的文件，很容易搜到。</p>
+<h1 id="安装依赖包用来升级和检验文件"><a href="#安装依赖包用来升级和检验文件" class="headerlink" title="安装依赖包用来升级和检验文件"></a>安装依赖包用来升级和检验文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libdigest-perl-md5-perl perl-tk</div></pre></td></tr></table></figure>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">su        // to be root</div><div class="line">mount -o loop texlive2015.iso  /mnt/</div><div class="line">cd /mnt</div><div class="line">./install-tl</div></pre></td></tr></table></figure>
+<h1 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h1><p>在~/.bashrc中加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PATH=/usr/local/texlive/2015/bin/x86_64-linux:$PATH; export PATH</div><div class="line">MANPATH=/usr/local/texlive/2015/texmf-dist/doc/man:$MANPATH; export MANPATH</div><div class="line">INFOPATH=/usr/local/texlive/2015/texmf-dist/doc/info:$INFOPATH; export INFOPATH</div></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -334,13 +368,21 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/ubuntu/" rel="tag">#ubuntu</a>
+          
+            <a href="/tags/texlive/" rel="tag">#texlive</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/13/树莓派ssh端口转发/" rel="next" title="树莓派ssh端口转发">
-                <i class="fa fa-chevron-left"></i> 树莓派ssh端口转发
+              <a href="/2016/11/13/关于云端工作和备份/" rel="next" title="关于云端工作和备份">
+                <i class="fa fa-chevron-left"></i> 关于云端工作和备份
               </a>
             
           </div>

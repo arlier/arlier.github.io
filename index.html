@@ -257,6 +257,235 @@
             
               
                 
+                <a class="post-title-link" href="/2016/11/23/树莓派ssh端口转发/" itemprop="url">
+                  树莓派ssh端口转发
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-23T01:46:53+08:00" content="2016-11-23">
+              2016-11-23
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>为了在树莓派上工作，并且远程访问树莓派，我需要实现内网穿透。网上有好几种方案，比如花生壳，端口转发，开源的ngrok等。最后发现ssh的端口转发最方便；但缺点是不够稳定，需要继续添加脚本，使其在断开连接时检测并重启。具体实现方法：</p>
+<h2 id="树莓派上："><a href="#树莓派上：" class="headerlink" title="树莓派上："></a>树莓派上：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -N -f -R 2222:127.0.0.1:22 user@public-IP</div></pre></td></tr></table></figure>
+<h2 id="远程主机上："><a href="#远程主机上：" class="headerlink" title="远程主机上："></a>远程主机上：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -p 2222 pi@localhost</div></pre></td></tr></table></figure>
+<p>就能实现在外网上访问内网中的树莓派。<br>当然这样的链接的网速和稳定性都不太好，不适合长期使用。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/18/c-读取一行文本文件/" itemprop="url">
+                  bash读取一行文本文件
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-18T01:45:29+08:00" content="2016-11-18">
+              2016-11-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <h1 id="方法一，指定换行符读取："><a href="#方法一，指定换行符读取：" class="headerlink" title="方法一，指定换行符读取："></a>方法一，指定换行符读取：</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"><span class="keyword">for</span> LINE in `cat /etc/passwd`  </div><div class="line"><span class="keyword">do</span>   </div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
+<h1 id="方法二，文件重定向给read处理："><a href="#方法二，文件重定向给read处理：" class="headerlink" title="方法二，文件重定向给read处理："></a>方法二，文件重定向给read处理：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line">cat /etc/passwd | <span class="keyword">while</span> read LINE  </div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
+<h1 id="方法三，用read读取文件重定向："><a href="#方法三，用read读取文件重定向：" class="headerlink" title="方法三，用read读取文件重定向："></a>方法三，用read读取文件重定向：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"></div><div class="line"><span class="keyword">while</span> read LINE</div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done &lt; /etc/passwd</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/11/13/标准的稳定性/" itemprop="url">
                   标准的稳定性
                 </a>
@@ -461,98 +690,6 @@
           </span>
 
           
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/13/树莓派ssh端口转发/" itemprop="url">
-                  树莓派ssh端口转发
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-13T01:46:53+08:00" content="2016-11-13">
-              2016-11-13
-            </time>
-          </span>
-
-          
             <span class="post-category" >
               &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
@@ -595,10 +732,12 @@
       
         
           
-            <p>为了在树莓派上工作，并且远程访问树莓派，我需要实现内网穿透。网上有好几种方案，比如花生壳，端口转发，开源的ngrok等。最后发现ssh的端口转发最方便；但缺点是不够稳定，需要继续添加脚本，使其在断开连接时检测并重启。具体实现方法：</p>
-<h2 id="树莓派上："><a href="#树莓派上：" class="headerlink" title="树莓派上："></a>树莓派上：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -N -f -R 2222:127.0.0.1:22 user@public-IP</div></pre></td></tr></table></figure>
-<h2 id="远程主机上："><a href="#远程主机上：" class="headerlink" title="远程主机上："></a>远程主机上：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -p 2222 pi@localhost</div></pre></td></tr></table></figure>
-<p>就能实现在外网上访问内网中的树莓派。<br>当然这样的链接的网速和稳定性都不太好，不适合长期使用。</p>
+            <p>为了在本地使用latex和beamer，又重新安装了一遍texlive：</p>
+<h1 id="从镜像站下载安装包"><a href="#从镜像站下载安装包" class="headerlink" title="从镜像站下载安装包"></a>从镜像站下载安装包</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://mirrors.ctan.org/systems/texlive/Images/texlive2016.iso</div></pre></td></tr></table></figure>
+<p>国内高校的镜像站也有对应的文件，很容易搜到。</p>
+<h1 id="安装依赖包用来升级和检验文件"><a href="#安装依赖包用来升级和检验文件" class="headerlink" title="安装依赖包用来升级和检验文件"></a>安装依赖包用来升级和检验文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libdigest-perl-md5-perl perl-tk</div></pre></td></tr></table></figure>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">su        // to be root</div><div class="line">mount -o loop texlive2015.iso  /mnt/</div><div class="line">cd /mnt</div><div class="line">./install-tl</div></pre></td></tr></table></figure>
+<h1 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h1><p>在~/.bashrc中加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PATH=/usr/local/texlive/2015/bin/x86_64-linux:$PATH; export PATH</div><div class="line">MANPATH=/usr/local/texlive/2015/texmf-dist/doc/man:$MANPATH; export MANPATH</div><div class="line">INFOPATH=/usr/local/texlive/2015/texmf-dist/doc/info:$INFOPATH; export INFOPATH</div></pre></td></tr></table></figure></p>
 
           
         
@@ -692,120 +831,6 @@
         
           
             
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/13/c-读取一行文本文件/" itemprop="url">
-                  bash读取一行文本文件
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-13T01:45:29+08:00" content="2016-11-13">
-              2016-11-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <h1 id="方法一，指定换行符读取："><a href="#方法一，指定换行符读取：" class="headerlink" title="方法一，指定换行符读取："></a>方法一，指定换行符读取：</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"><span class="keyword">for</span> LINE in `cat /etc/passwd`  </div><div class="line"><span class="keyword">do</span>   </div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
-<h1 id="方法二，文件重定向给read处理："><a href="#方法二，文件重定向给read处理：" class="headerlink" title="方法二，文件重定向给read处理："></a>方法二，文件重定向给read处理：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line">cat /etc/passwd | <span class="keyword">while</span> read LINE  </div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
-<h1 id="方法三，用read读取文件重定向："><a href="#方法三，用read读取文件重定向：" class="headerlink" title="方法三，用read读取文件重定向："></a>方法三，用read读取文件重定向：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"></div><div class="line"><span class="keyword">while</span> read LINE</div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done &lt; /etc/passwd</div></pre></td></tr></table></figure>
-
           
         
       
