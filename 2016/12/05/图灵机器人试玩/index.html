@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="人工智能这个概念其实已经产生几十年了，最近开始越来越靠近人们的生活了。前几天看到师兄在微信装了个图灵机器人，可以自动聊天；虽然离真实的聊天还有差距，但的确非常有意思。于是也动手安装了下。
 在树莓派运行图灵机器人有专用的微信版本和对应的客户端软件，功能比较丰富，但我觉得这样太简单了，限制性也多；于是就去github找到几个第三方的项目去实现，基本都是调用web微信的接口以及图灵机器人的接口来实现。这">
-<meta property="og:updated_time" content="2016-12-05T06:44:59.200Z">
+<meta property="og:updated_time" content="2016-12-05T07:05:44.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图灵机器人试玩">
 <meta name="twitter:description" content="人工智能这个概念其实已经产生几十年了，最近开始越来越靠近人们的生活了。前几天看到师兄在微信装了个图灵机器人，可以自动聊天；虽然离真实的聊天还有差距，但的确非常有意思。于是也动手安装了下。
@@ -325,8 +325,8 @@
 <p>不出意外的话就能生成二维码扫描登陆之后就可以自动调用图灵机器人了；当然这个脚本还有更多的功能，你可以自己探索。</p>
 <p>#在服务器上运行<br>有时候树莓派不太稳定，而且经常会断网，于是我想着能不能把脚本挂到我的腾讯云上运行，这在理论上是没有问题的。<br>参考上面树莓派的运行过程，登录到服务器执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">apt-get install python git</div><div class="line">pip install qrcode</div><div class="line">pip install requests</div><div class="line">pip install pyqrcode</div><div class="line">pip install pypng</div><div class="line">git <span class="built_in">clone</span> https://github.com/arlier/wxBot.git</div><div class="line">python bot.py</div></pre></td></tr></table></figure></p>
 <p>这样就可以运行成功了，当然连接服务器的时候要选好想x11等图形界面把png传到本地或者用scp在temp文件夹下载回来。</p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>在服务器上也存在断网后需要重启的问题，这个还不好处理，就算有个脚本什么的也需要扫码确认登录微信。最好的办法就是自动重新认证或者确保尽量不断网。后者只需要使用tmux开个seesion就行了。重新登录服务器，执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">apt-get install python git</div><div class="line">pip install qrcode</div><div class="line">pip install requests</div><div class="line">pip install pyqrcode</div><div class="line">pip install pypng</div><div class="line">git <span class="built_in">clone</span> https://github.com/arlier/wxBot.git</div><div class="line">python bot.py</div></pre></td></tr></table></figure></p>
-<p>当然还有一个有意思的附加功能，就是所有发给我的东西都无法撤回了，因为本地都有存档。</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>在服务器上也存在断网后需要重启的问题，这个还不好处理，就算有个脚本什么的也需要扫码确认登录微信。最好的办法就是自动重新认证或者确保尽量不断网。后者只需要使用tmux开个seesion就行了。重新登录服务器，执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">apt-get install tmux</div><div class="line">tmux new <span class="_">-s</span> &lt;name-of-my-session&gt;</div><div class="line">python bot.py</div></pre></td></tr></table></figure></p>
+<p>这个脚本还有一个有意思的附加功能，就是所有发给我的东西都无法撤回了，因为本地都有存档。^_^</p>
 
       
     </div>
