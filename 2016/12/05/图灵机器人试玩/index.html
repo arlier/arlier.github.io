@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="人工智能这个概念其实已经产生几十年了，最近开始越来越靠近人们的生活了。前几天看到师兄在微信装了个图灵机器人，可以自动聊天；虽然离真实的聊天还有差距，但的确非常有意思。于是也动手安装了下。
 在树莓派运行图灵机器人有专用的微信版本和对应的客户端软件，功能比较丰富，但我觉得这样太简单了，限制性也多；于是就去github找到几个第三方的项目去实现，基本都是调用web微信的接口以及图灵机器人的接口来实现。这">
-<meta property="og:updated_time" content="2016-12-05T07:43:45.293Z">
+<meta property="og:updated_time" content="2016-12-10T06:44:53.184Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图灵机器人试玩">
 <meta name="twitter:description" content="人工智能这个概念其实已经产生几十年了，最近开始越来越靠近人们的生活了。前几天看到师兄在微信装了个图灵机器人，可以自动聊天；虽然离真实的聊天还有差距，但的确非常有意思。于是也动手安装了下。
@@ -326,7 +326,7 @@
 <p>#在服务器上运行<br>有时候树莓派不太稳定，而且经常会断网，于是我想着能不能把脚本挂到我的腾讯云上运行，这在理论上是没有问题的。<br>参考上面树莓派的运行过程，登录到服务器执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">apt-get install python git</div><div class="line">pip install qrcode</div><div class="line">pip install requests</div><div class="line">pip install pyqrcode</div><div class="line">pip install pypng</div><div class="line">git <span class="built_in">clone</span> https://github.com/arlier/wxBot.git</div><div class="line">python bot.py</div></pre></td></tr></table></figure></p>
 <p>这样就可以运行成功了，当然连接服务器的时候要选好想x11等图形界面把png传到本地或者用scp在temp文件夹下载回来。</p>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>在服务器上也存在断网后需要重启的问题，这个还不好处理，就算有个脚本什么的也需要扫码确认登录微信。最好的办法就是自动重新认证或者确保尽量不断网。后者只需要使用tmux开个seesion就行了。重新登录服务器，执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">apt-get install tmux</div><div class="line">tmux new <span class="_">-s</span> &lt;name-of-my-session&gt;</div><div class="line">python bot.py</div></pre></td></tr></table></figure></p>
-<p>这个脚本还有一个有意思的附加功能，就是所有发给我的东西都无法撤回了，因为本地都有存档。<code>^_^</code><br>目前这个机器人还很不只能，只能在云端进行匹配然后应答；但是在真是的环境中最佳状态应该是能够匹配聊天者自己的信息，也就是要经过独特的设置和训练，这样才能获得比较接近真实的效果。另一个问题是，如何抱枕聊天过程的逻辑性，即根据前后对话以及聊天者的个人库而不是共有库来进行匹配。显然这个问题挑战性比较大，我目前设想的是建立很多个逻辑库、对话模型、身份模型，然后依据使用情况不断进行优化和匹配，同时在积累数据的过程中完善那些模型库。</p>
+<p>这个脚本还有一个有意思的附加功能，就是所有发给我的东西都无法撤回了，因为本地都有存档。<code>^_^</code><br>目前这个机器人还很不智能，只能在云端进行匹配然后应答；但是在真实的环境中最佳状态应该是能够匹配聊天者自己的信息，也就是要经过独特的设置和训练，这样才能获得比较接近真实的效果。另一个问题是，如何抱枕聊天过程的逻辑性，即根据前后对话以及聊天者的个人库而不是共有库来进行匹配。显然这个问题挑战性比较大，我目前设想的是建立很多个逻辑库、对话模型、身份模型，然后依据使用情况不断进行优化和匹配，同时在积累数据的过程中完善那些模型库。</p>
 <h2 id="确定性和随机性"><a href="#确定性和随机性" class="headerlink" title="确定性和随机性"></a>确定性和随机性</h2><p>现在的计算机的一个核心特征就是确定性，而人们的思维却具有很大的随机性，这是一个很大的差异；如何用确定的计算机模拟人们的思维呢？这一点也许能够从随机数的产生中看出一些迹象：目前计算机产生的随机数都是伪随机数，也就是周期性很大的序列，但这些数对于几乎所有的应用都是符合要求的。同样可以设想，人类的知识和特征的描述在某种程度上也是有限的，那么就存在用某种方法从确定的描述中挑选并组合出一个最接近真实的模型，并用一些高效的指标来度量这种描述的有效性。这其实就是机器学习、神经网络在干的事情，只不过我们貌似需要更为聪明的做法。</p>
 
       
