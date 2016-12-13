@@ -258,7 +258,7 @@
               
                 
                 <a class="post-title-link" href="/2016/12/12/Geant4安装记录/" itemprop="url">
-                  Geant4安装记录
+                  Geant4安装记录（1）
                 </a>
               
             
@@ -434,7 +434,8 @@
         
           
             <h1 id="安装gcc"><a href="#安装gcc" class="headerlink" title="安装gcc"></a>安装gcc</h1><p>为了安装Geant4，需要先升级gcc，这是一个艰难的过程。在实现的帮助下，整了大半天还是没什么结果。从开始的升级cmake，再到多次编译cmake然后还是没解决问题，真的好难。。。</p>
-<h1 id="艰辛的但没有成功的安装过程"><a href="#艰辛的但没有成功的安装过程" class="headerlink" title="艰辛的但没有成功的安装过程"></a>艰辛的但没有成功的安装过程</h1>
+<h1 id="艰辛的但没有成功的安装过程"><a href="#艰辛的但没有成功的安装过程" class="headerlink" title="艰辛的但没有成功的安装过程"></a>艰辛的但没有成功的安装过程</h1><p>虽然最后没有安装成功，在这里记录一下有用的命令。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">which</span> gmake    定位程序位置</div><div class="line">find /home/arlier/geant4/geant4.10.02.p02/ | grep geant4make.sh    正则表达式查找文件。</div><div class="line">links mirrors.ustc.edu.cn     内置文本浏览器查看中科大镜像站</div><div class="line"></div><div class="line"> wget cmake.org/files/v3.6/cmake-3.6.3-Linux-x86_64.tar.gz  下载gcc</div><div class="line"> tar xvf cmake-3.6.3-Linux-x86_64.tar.gz    解压gcc</div><div class="line"> <span class="built_in">which</span> gcc     定位gcc</div><div class="line"> gcc --version    版本信息</div><div class="line"> file /usr/bin/cc  查看文件类型</div></pre></td></tr></table></figure></p>
+
           
         
       
