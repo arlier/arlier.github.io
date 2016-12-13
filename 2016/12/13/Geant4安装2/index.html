@@ -77,16 +77,18 @@
 
 
 
-<meta name="description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序123cd /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1sudo mkdir buildB1cd buildB1">
+<meta name="description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序1234567891011121314151617cd /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1sudo mkdir buildB1cd buildB1source /home/arlier/geant4/g4install/share/G">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Geant4安装2">
 <meta property="og:url" content="http://yoursite.com/2016/12/13/Geant4安装2/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序123cd /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1sudo mkdir buildB1cd buildB1">
-<meta property="og:updated_time" content="2016-12-13T05:22:28.354Z">
+<meta property="og:description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序1234567891011121314151617cd /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1sudo mkdir buildB1cd buildB1source /home/arlier/geant4/g4install/share/G">
+<meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/g4B1.jpg">
+<meta property="og:updated_time" content="2016-12-13T07:09:11.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Geant4安装2">
-<meta name="twitter:description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序123cd /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1sudo mkdir buildB1cd buildB1">
+<meta name="twitter:description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序1234567891011121314151617cd /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1sudo mkdir buildB1cd buildB1source /home/arlier/geant4/g4install/share/G">
+<meta name="twitter:image" content="http://o98383o2a.bkt.clouddn.com/g4B1.jpg">
 
 
 
@@ -313,7 +315,7 @@
       
 
       
-        <p>昨天初步完成了G4的安装，接着运行一下examples检验一下程序<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo mkdir buildB1</div><div class="line"><span class="built_in">cd</span> buildB1</div></pre></td></tr></table></figure></p>
+        <p><img src="http://o98383o2a.bkt.clouddn.com/g4B1.jpg" alt=""><br>昨天初步完成了G4的安装，接着运行一下examples检验一下程序<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo mkdir buildB1</div><div class="line"><span class="built_in">cd</span> buildB1</div><div class="line"><span class="built_in">source</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/geant4make/geant4make.sh</div><div class="line">make j4</div><div class="line">出现错误</div><div class="line">libGL error: No matching fbConfigs or visuals found</div><div class="line">libGL error: failed to load driver: swrast</div><div class="line">寻找解决方案</div><div class="line">http://askubuntu.com/questions/541343/problems-with-libgl-fbconfigs-swrast-through-each-update</div><div class="line">按照上面的帖子继续：</div><div class="line"><span class="built_in">export</span> LIBGL_DEBUG=verbose</div><div class="line">sudo apt install mesa-utils</div><div class="line">glxgears</div><div class="line">虽然这个回复是-2，但在我的电脑上好使 sudo apt-get install nvidia-331</div><div class="line">总算是运行成功了！</div></pre></td></tr></table></figure></p>
 
       
     </div>
