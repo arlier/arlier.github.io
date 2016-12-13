@@ -61,7 +61,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Geant4," />
+  <meta name="keywords" content="服务器," />
 
 
 
@@ -77,22 +77,19 @@
 
 
 
-<meta name="description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序
-根据之前data文件夹配置环境变量：1234567export  G4LEDATA=/home/you/geant4.9.6-install /data/G4EMLOW6.32export  G4LEVELGAMMADATA=/home/you/geant4.9.6-install /data/PhotonEvaporation2">
+<meta name="description" content="fq之前买了一年的DO的服务器到期了，最近挺缺钱的，就只能续一个便宜点的主机了。在网上找了个hostdare的年付20$。比起之前60$少了很多；至于性能，先用用再说吧。那么现在的首要需求还是先搭建一个ss服务器。之前搭了好几次，都没有记录下来，正好这次有机会弄个详细记录，方便以后查找。
+开始安装以root身份执行1234567891011121314151617181920yum updatey">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Geant4安装2">
-<meta property="og:url" content="http://yoursite.com/2016/12/13/Geant4安装2/index.html">
+<meta property="og:title" content="再次搭建ss服务器">
+<meta property="og:url" content="http://yoursite.com/2016/12/13/再次搭建ss服务器/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序
-根据之前data文件夹配置环境变量：1234567export  G4LEDATA=/home/you/geant4.9.6-install /data/G4EMLOW6.32export  G4LEVELGAMMADATA=/home/you/geant4.9.6-install /data/PhotonEvaporation2">
-<meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/g4B1.jpg">
-<meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/g4hadrontherapy.jpg">
-<meta property="og:updated_time" content="2016-12-13T08:12:03.105Z">
+<meta property="og:description" content="fq之前买了一年的DO的服务器到期了，最近挺缺钱的，就只能续一个便宜点的主机了。在网上找了个hostdare的年付20$。比起之前60$少了很多；至于性能，先用用再说吧。那么现在的首要需求还是先搭建一个ss服务器。之前搭了好几次，都没有记录下来，正好这次有机会弄个详细记录，方便以后查找。
+开始安装以root身份执行1234567891011121314151617181920yum updatey">
+<meta property="og:updated_time" content="2016-12-13T13:55:32.369Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Geant4安装2">
-<meta name="twitter:description" content="昨天初步完成了G4的安装，接着运行一下examples检验一下程序
-根据之前data文件夹配置环境变量：1234567export  G4LEDATA=/home/you/geant4.9.6-install /data/G4EMLOW6.32export  G4LEVELGAMMADATA=/home/you/geant4.9.6-install /data/PhotonEvaporation2">
-<meta name="twitter:image" content="http://o98383o2a.bkt.clouddn.com/g4B1.jpg">
+<meta name="twitter:title" content="再次搭建ss服务器">
+<meta name="twitter:description" content="fq之前买了一年的DO的服务器到期了，最近挺缺钱的，就只能续一个便宜点的主机了。在网上找了个hostdare的年付20$。比起之前60$少了很多；至于性能，先用用再说吧。那么现在的首要需求还是先搭建一个ss服务器。之前搭了好几次，都没有记录下来，正好这次有机会弄个详细记录，方便以后查找。
+开始安装以root身份执行1234567891011121314151617181920yum updatey">
 
 
 
@@ -113,9 +110,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/12/13/Geant4安装2/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/13/再次搭建ss服务器/"/>
 
-  <title> Geant4安装2 | mapping the observed world to our imagination </title>
+  <title> 再次搭建ss服务器 | mapping the observed world to our imagination </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -261,7 +258,7 @@
             
             
               
-                Geant4安装2
+                再次搭建ss服务器
               
             
           </h1>
@@ -273,7 +270,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-13T13:19:35+08:00" content="2016-12-13">
+            <time itemprop="dateCreated" datetime="2016-12-13T19:45:03+08:00" content="2016-12-13">
               2016-12-13
             </time>
           </span>
@@ -319,9 +316,14 @@
       
 
       
-        <p><img src="http://o98383o2a.bkt.clouddn.com/g4B1.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/g4hadrontherapy.jpg" alt=""><br>昨天初步完成了G4的安装，接着运行一下examples检验一下程序</p>
-<h1 id="根据之前data文件夹配置环境变量："><a href="#根据之前data文件夹配置环境变量：" class="headerlink" title="根据之前data文件夹配置环境变量："></a>根据之前data文件夹配置环境变量：</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span>  G4LEDATA=/home/you/geant4.9.6-install /data/G4EMLOW6.32</div><div class="line"><span class="built_in">export</span>  G4LEVELGAMMADATA=/home/you/geant4.9.6-install /data/PhotonEvaporation2.3</div><div class="line"><span class="built_in">export</span>  G4NEUTRONHPDATA=/home/you/geant4.9.6-install /data/G4NDL4.2</div><div class="line"><span class="built_in">export</span>  G4NEUTRONXSDATA=/home/you/geant4.9.6-install /data/G4NEUTRONXS1.2</div><div class="line"><span class="built_in">export</span>  G4PIIDATA=/home/you/geant4.9.6-install /data/G4PII1.3</div><div class="line"><span class="built_in">export</span>  G4RADIOACTIVEDATA=/home/you/geant4.9.6-install /data/RadioactiveDecay3.6</div><div class="line"><span class="built_in">export</span>  G4REALSURFACEDATA=/home/you/geant4.9.6-install /data/RealSurface1.0</div></pre></td></tr></table></figure>
-<h1 id="继续安装"><a href="#继续安装" class="headerlink" title="继续安装"></a>继续安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo mkdir buildB1</div><div class="line"><span class="built_in">cd</span> buildB1</div><div class="line"><span class="built_in">source</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/geant4make/geant4make.sh</div><div class="line">make j4</div><div class="line"><span class="comment">## 出现错误</span></div><div class="line">libGL error: No matching fbConfigs or visuals found</div><div class="line">libGL error: failed to load driver: swrast</div><div class="line"><span class="comment">## 寻找解决方案</span></div><div class="line">http://askubuntu.com/questions/541343/problems-with-libgl-fbconfigs-swrast-through-each-update</div><div class="line"><span class="comment">## 按照上面的帖子继续：</span></div><div class="line"><span class="built_in">export</span> LIBGL_DEBUG=verbose</div><div class="line">sudo apt install mesa-utils</div><div class="line">glxgears</div><div class="line">虽然这个回复是-2，但在我的电脑上好使 sudo apt-get install nvidia-331</div><div class="line">总算是运行成功了！</div></pre></td></tr></table></figure>
+        <h1 id="fq"><a href="#fq" class="headerlink" title="fq"></a>fq</h1><p>之前买了一年的DO的服务器到期了，最近挺缺钱的，就只能续一个便宜点的主机了。在网上找了个hostdare的年付20$。比起之前60$少了很多；至于性能，先用用再说吧。那么现在的首要需求还是先搭建一个ss服务器。之前搭了好几次，都没有记录下来，正好这次有机会弄个详细记录，方便以后查找。</p>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>以root身份执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">yum update</div><div class="line">yum install python-setuptools &amp;&amp; easy_install pip</div><div class="line">pip install shadowsocks</div><div class="line">vi /etc/shadowsocks.json</div><div class="line"></div><div class="line">&#123;</div><div class="line"><span class="string">"server"</span>:<span class="string">"103.72.76.34"</span>,</div><div class="line"><span class="string">"port_password"</span>:&#123;</div><div class="line">     <span class="string">"8381"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8382"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8383"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8384"</span>:<span class="string">"passwd"</span></div><div class="line">     &#125;,</div><div class="line"><span class="string">"timeout"</span>:60,</div><div class="line"><span class="string">"method"</span>:<span class="string">"rc4-md5"</span>,</div><div class="line"><span class="string">"fast_open"</span>:<span class="literal">false</span>,</div><div class="line"><span class="string">"workers"</span>:1</div><div class="line">&#125;</div><div class="line">vi /etc/rc.local</div><div class="line">ssserver -c /etc/shadowsocks.json <span class="_">-d</span> start</div></pre></td></tr></table></figure></p>
+<p>最后在手机上装好了SSR再次成功FQ，现在看起来这很容易。。。</p>
+<h1 id="主要参考："><a href="#主要参考：" class="headerlink" title="主要参考："></a>主要参考：</h1><ul>
+<li><a href="http://www.cnblogs.com/Gbeniot/p/5567187.html" target="_blank" rel="external">http://www.cnblogs.com/Gbeniot/p/5567187.html</a></li>
+<li><a href="https://www.91ssfq.com/archives/48" target="_blank" rel="external">https://www.91ssfq.com/archives/48</a></li>
+<li><a href="http://bbs.feng.com/read-htm-tid-10743703.html?shareForumUrl=1" target="_blank" rel="external">http://bbs.feng.com/read-htm-tid-10743703.html?shareForumUrl=1</a></li>
+</ul>
 
       
     </div>
@@ -364,7 +366,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Geant4/" rel="tag">#Geant4</a>
+            <a href="/tags/服务器/" rel="tag">#服务器</a>
           
         </div>
       
@@ -373,17 +375,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/13/导航页面/" rel="next" title="导航页面">
-                <i class="fa fa-chevron-left"></i> 导航页面
+              <a href="/2016/12/13/Geant4安装2/" rel="next" title="Geant4安装2">
+                <i class="fa fa-chevron-left"></i> Geant4安装2
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/13/再次搭建ss服务器/" rel="prev" title="再次搭建ss服务器">
-                再次搭建ss服务器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
