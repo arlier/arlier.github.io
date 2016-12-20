@@ -98,7 +98,7 @@
     motion: true,
     duoshuo: {
       userId: 0,
-      author: 'Author'
+      author: 'Penulis'
     }
   };
 </script>
@@ -235,6 +235,119 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/08/安装gcc/" itemprop="url">
+                  安装gcc
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-08T15:12:59+08:00" content="2016-12-08">
+              2016-12-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <h1 id="安装gcc"><a href="#安装gcc" class="headerlink" title="安装gcc"></a>安装gcc</h1><p>为了安装Geant4，需要先升级gcc，这是一个艰难的过程。在实现的帮助下，整了大半天还是没什么结果。从开始的升级cmake，再到多次编译cmake然后还是没解决问题，真的好难。。。</p>
+<h1 id="艰辛的但没有成功的安装过程"><a href="#艰辛的但没有成功的安装过程" class="headerlink" title="艰辛的但没有成功的安装过程"></a>艰辛的但没有成功的安装过程</h1><p>虽然最后没有安装成功，在这里记录一下有用的命令。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">which</span> gmake    定位程序位置</div><div class="line">find /home/arlier/geant4/geant4.10.02.p02/ | grep geant4make.sh    正则表达式查找文件。</div><div class="line">links mirrors.ustc.edu.cn     内置文本浏览器查看中科大镜像站</div><div class="line"></div><div class="line"> wget cmake.org/files/v3.6/cmake-3.6.3-Linux-x86_64.tar.gz  下载gcc</div><div class="line"> tar xvf cmake-3.6.3-Linux-x86_64.tar.gz    解压gcc</div><div class="line"> <span class="built_in">which</span> gcc     定位gcc</div><div class="line"> gcc --version    版本信息</div><div class="line"> file /usr/bin/cc  查看文件类型</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -1013,118 +1126,6 @@
           
             <p>接触github好几年了，中间断断续续的，平时也就是看看别人的项目，或者clone一些东西。有几次在linux按照教程传了一些东西，没过多久就又忘记了。。。然后又得重新再找一次教程。于是决定在我的博客记录一下，这样以后用起来方便一些。<br><img src="http://o98383o2a.bkt.clouddn.com/gitico7.png" alt=""></p>
 <h1 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h1> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git init  初始化</div><div class="line">git add .</div><div class="line">git commit -m <span class="string">"xxxxx"</span>  </div><div class="line">git remote add origin git@github.com:xuhongxin/deom.git    </div><div class="line">git pull origin master</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/18/新的beamer模板/" itemprop="url">
-                  新的beamer模板
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-18T01:48:14+08:00" content="2016-11-18">
-              2016-11-18
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <h1 id="beamer模板"><a href="#beamer模板" class="headerlink" title="beamer模板"></a>beamer模板</h1><p><img src="https://camo.githubusercontent.com/da754cd10b8a0c20144d0fa848a347698ff7a197/687474703a2f2f692e696d6775722e636f6d2f4278753532667a2e706e67" alt=""><br>最近发现了一个很简洁的beamer模板，打算以后的presentation都用他了，效果如下：<br><a href="https://www.overleaf.com/latex/templates/a-modern-beamer-theme-mtheme/qzyvdhrntfmr#.WD5aJOB97IU" target="_blank" rel="external">https://www.overleaf.com/latex/templates/a-modern-beamer-theme-mtheme/qzyvdhrntfmr#.WD5aJOB97IU</a><br><a href="https://github.com/matze/mtheme" target="_blank" rel="external">https://github.com/matze/mtheme</a></p>
 
           
         
