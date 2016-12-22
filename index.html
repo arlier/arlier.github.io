@@ -257,6 +257,121 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/22/谷歌SketchUp/" itemprop="url">
+                  谷歌SketchUp
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-22T19:10:07+08:00" content="2016-12-22">
+              2016-12-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p><img src="http://o98383o2a.bkt.clouddn.com/skptry.jpg" alt=""></p>
+<h1 id="半小时上手"><a href="#半小时上手" class="headerlink" title="半小时上手"></a>半小时上手</h1><p>之前从未接触过这个软件，上面的图从安装软件到画好只用了半小时，实际画图也就几分钟；原因只有一个这个软件很方便，适合非专业画图。就像它的名字一样，非常适合初步的结构构思和展现，不要求很好、很精密的设置。</p>
+<p>本来打算学SolidWorks，结果下载了半天才下了20%，再想到要安装，破解，然后从头学起；这个还是以后慢慢来吧。想到大三的时候就说要学，结果两三年过去了还是多不多，出来混迟早是要还的。。。。</p>
+<h1 id="谷歌出品"><a href="#谷歌出品" class="headerlink" title="谷歌出品"></a>谷歌出品</h1><p>在得知这款软件是谷歌出的之后，我对它更有好感了，，，我喜欢谷歌这样的公司，它所有的出品都让人尊敬。<br>有了这个软件，以后表达一些关于空间设计的东西就方便多了，比如我一直构思一个自己的小实验是，如果能用这个画出来简直完美啊！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/22/探索PINE64/" itemprop="url">
                   探索PINE64
                 </a>
@@ -322,7 +437,11 @@
             <p><img src="http://o98383o2a.bkt.clouddn.com/pinehtop.jpg" alt=""></p>
 <h1 id="第一次连接"><a href="#第一次连接" class="headerlink" title="第一次连接"></a>第一次连接</h1><p>拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口扫描软件）：<br><code>pine64 192.168.1.156    ba:88:8e:64:aa:78</code>  接着通过terminal登录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ssh ubuntu@192.168.1.156</div><div class="line">password: ubuntu</div><div class="line">uname -a</div><div class="line">Linux pine64 3.10.104 #13 SMP PREEMPT Mon Dec 12 15:00:06 MYT 2016 aarch64 aarch64 aarch64 GNU/Linux=&quot;#statement&quot;</div><div class="line"># 查看发行版信息</div><div class="line">cat /etc/issue</div><div class="line">Ubuntu 16.04.1 LTS \n \l</div><div class="line">#添加su账号</div><div class="line">sudo password</div><div class="line">password: ubuntu</div></pre></td></tr></table></figure></p>
 <h1 id="试试screen连接"><a href="#试试screen连接" class="headerlink" title="试试screen连接"></a>试试screen连接</h1><p>安装并连接screen<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt install screen</div><div class="line">screen -xR</div></pre></td></tr></table></figure></p>
-<p>这种多个设备同屏的感觉真好！</p>
+<p>这种多个设备同屏的感觉真好！screen和tmux类似都可以退出连接而不影响命令的执行，很实用。</p>
+<h1 id="VNC连接"><a href="#VNC连接" class="headerlink" title="VNC连接"></a>VNC连接</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install tightvncserver</div><div class="line">tightvncserver</div></pre></td></tr></table></figure>
+<h1 id="播放音乐"><a href="#播放音乐" class="headerlink" title="播放音乐"></a>播放音乐</h1><h2 id="安装MPLAYER"><a href="#安装MPLAYER" class="headerlink" title="安装MPLAYER"></a>安装MPLAYER</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install mplayer2</div></pre></td></tr></table></figure>
+<p>##下载音乐<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 下载一个mp3文件，或者其他方法得到一个音乐文件</span></div><div class="line">wget http://blog.lxx1.com/wp-content/uploads/2016/07/shero.mp3</div><div class="line">mplayer shero.mp3</div></pre></td></tr></table></figure></p>
+<p>貌似一直没有音频输出，尝试google了好几种方法也不行，暂时放弃了。这个问题类似于树莓派中的音频设置，但又不一样。<br>sudo gedit /etc/modprobe.d/alsa-base.conf</p>
 
           
         
@@ -966,125 +1085,6 @@
             <h1 id="Python的哲学"><a href="#Python的哲学" class="headerlink" title="Python的哲学"></a>Python的哲学</h1><p><code>只做一件事,并且把它做好。</code><br>如果你只需要做一件事，这其实是一个非常完美的状态。人们所说的专注也就是你只在做一件事，而压缩了其他所有的进程。计算机本身也会有多个任务，但都严格按照优先级运行；到了人类身上，并不能迅速地进行优先级判断，这时候就会犹豫不决、不知所措就行计算机内存不足的感觉；这是非常正常的感觉，也是人类的优势所在，再进化过程中的行为不断得到环境的筛选，最后人们总会实时地应对而不是机械地反应。</p>
 <p>那么当你决定用尽全力去做一件事的时候，需要的是什么状态呢？按照Python的哲学，你只需要选择一种最好的办法就可以；可是程序员都是人，他们的解决方法都受到个人经历和学识以及创造力等因素的限制，所谓最好的办法应该也是不存在的。那么，为了找到“最好的方法”就要不断去尝试，不断去优化了；这正是科学家吗的秘密武器啊！他们不断地思考，然后提出一个方法或者观点，再去验证，如此反复。</p>
 <p>很多人都会认可了以上只做一件事然后不断探索如去做的更好的观念，最后谁能找到最好的办法就具有不确定性的因素，而且依赖于当时的外部环境，这是一个事实。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/13/再次搭建ss服务器/" itemprop="url">
-                  再次搭建ss服务器
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-13T19:45:03+08:00" content="2016-12-13">
-              2016-12-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <h1 id="fq"><a href="#fq" class="headerlink" title="fq"></a>fq</h1><p>之前买了一年的DO的服务器到期了，最近挺缺钱的，就只能续一个便宜点的主机了。在网上找了个hostdare的年付20$。比起之前60$少了很多；至于性能，先用用再说吧。那么现在的首要需求还是先搭建一个ss服务器。之前搭了好几次，都没有记录下来，正好这次有机会弄个详细记录，方便以后查找。</p>
-<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>以root身份执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">yum update</div><div class="line">yum install python-setuptools &amp;&amp; easy_install pip</div><div class="line">pip install shadowsocks</div><div class="line">vi /etc/shadowsocks.json</div><div class="line"></div><div class="line">&#123;</div><div class="line"><span class="string">"server"</span>:<span class="string">"103.72.76.34"</span>,</div><div class="line"><span class="string">"port_password"</span>:&#123;</div><div class="line">     <span class="string">"8381"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8382"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8383"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8384"</span>:<span class="string">"passwd"</span></div><div class="line">     &#125;,</div><div class="line"><span class="string">"timeout"</span>:60,</div><div class="line"><span class="string">"method"</span>:<span class="string">"rc4-md5"</span>,</div><div class="line"><span class="string">"fast_open"</span>:<span class="literal">false</span>,</div><div class="line"><span class="string">"workers"</span>:1</div><div class="line">&#125;</div><div class="line">vi /etc/rc.local</div><div class="line">ssserver -c /etc/shadowsocks.json <span class="_">-d</span> start</div></pre></td></tr></table></figure></p>
-<p>最后在手机上装好了SSR再次成功FQ，现在看起来这很容易。。。</p>
-<h1 id="主要参考："><a href="#主要参考：" class="headerlink" title="主要参考："></a>主要参考：</h1><ul>
-<li><a href="http://www.cnblogs.com/Gbeniot/p/5567187.html" target="_blank" rel="external">http://www.cnblogs.com/Gbeniot/p/5567187.html</a></li>
-<li><a href="https://www.91ssfq.com/archives/48" target="_blank" rel="external">https://www.91ssfq.com/archives/48</a></li>
-<li><a href="http://bbs.feng.com/read-htm-tid-10743703.html?shareForumUrl=1" target="_blank" rel="external">http://bbs.feng.com/read-htm-tid-10743703.html?shareForumUrl=1</a></li>
-</ul>
 
           
         
