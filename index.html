@@ -257,6 +257,305 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/22/探索PINE64/" itemprop="url">
+                  探索PINE64
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-22T09:16:01+08:00" content="2016-12-22">
+              2016-12-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p><img src="http://o98383o2a.bkt.clouddn.com/pinehtop.jpg" alt=""></p>
+<h1 id="第一次连接"><a href="#第一次连接" class="headerlink" title="第一次连接"></a>第一次连接</h1><p>拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口扫描软件）：<br><code>pine64 192.168.1.156    ba:88:8e:64:aa:78</code>  接着通过terminal登录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ssh ubuntu@192.168.1.156</div><div class="line">password: ubuntu</div><div class="line">uname -a</div><div class="line">Linux pine64 3.10.104 #13 SMP PREEMPT Mon Dec 12 15:00:06 MYT 2016 aarch64 aarch64 aarch64 GNU/Linux=&quot;#statement&quot;</div><div class="line"># 查看发行版信息</div><div class="line">cat /etc/issue</div><div class="line">Ubuntu 16.04.1 LTS \n \l</div><div class="line">#添加su账号</div><div class="line">sudo password</div><div class="line">password: ubuntu</div></pre></td></tr></table></figure></p>
+<h1 id="试试screen连接"><a href="#试试screen连接" class="headerlink" title="试试screen连接"></a>试试screen连接</h1><p>安装并连接screen<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt install screen</div><div class="line">screen -xR</div></pre></td></tr></table></figure></p>
+<p>这种多个设备同屏的感觉真好！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/22/我的CHIPs/" itemprop="url">
+                  我的CHIPs
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-22T09:14:35+08:00" content="2016-12-22">
+              2016-12-22
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/22/再这么玩下去，中国的科研就真的没戏了/" itemprop="url">
+                  再这么玩下去，中国的科研就真的没戏了
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-22T09:14:10+08:00" content="2016-12-22">
+              2016-12-22
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/20/破解隔壁的wifi/" itemprop="url">
                   破解隔壁的wifi
                 </a>
@@ -788,350 +1087,6 @@
 </ul>
 
           
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/13/Geant4安装2/" itemprop="url">
-                  Geant4安装2
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-13T13:19:35+08:00" content="2016-12-13">
-              2016-12-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p><img src="http://o98383o2a.bkt.clouddn.com/g4B1.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/g4hadrontherapy.jpg" alt=""><br>昨天初步完成了G4的安装，接着运行一下examples检验一下程序</p>
-<h1 id="根据之前data文件夹配置环境变量："><a href="#根据之前data文件夹配置环境变量：" class="headerlink" title="根据之前data文件夹配置环境变量："></a>根据之前data文件夹配置环境变量：</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span>  G4LEDATA=/home/you/geant4.9.6-install /data/G4EMLOW6.32</div><div class="line"><span class="built_in">export</span>  G4LEVELGAMMADATA=/home/you/geant4.9.6-install /data/PhotonEvaporation2.3</div><div class="line"><span class="built_in">export</span>  G4NEUTRONHPDATA=/home/you/geant4.9.6-install /data/G4NDL4.2</div><div class="line"><span class="built_in">export</span>  G4NEUTRONXSDATA=/home/you/geant4.9.6-install /data/G4NEUTRONXS1.2</div><div class="line"><span class="built_in">export</span>  G4PIIDATA=/home/you/geant4.9.6-install /data/G4PII1.3</div><div class="line"><span class="built_in">export</span>  G4RADIOACTIVEDATA=/home/you/geant4.9.6-install /data/RadioactiveDecay3.6</div><div class="line"><span class="built_in">export</span>  G4REALSURFACEDATA=/home/you/geant4.9.6-install /data/RealSurface1.0</div></pre></td></tr></table></figure>
-<h1 id="继续安装"><a href="#继续安装" class="headerlink" title="继续安装"></a>继续安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo mkdir buildB1</div><div class="line"><span class="built_in">cd</span> buildB1</div><div class="line"><span class="built_in">source</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/geant4make/geant4make.sh</div><div class="line">make j4</div><div class="line"><span class="comment">## 出现错误</span></div><div class="line">libGL error: No matching fbConfigs or visuals found</div><div class="line">libGL error: failed to load driver: swrast</div><div class="line"><span class="comment">## 寻找解决方案</span></div><div class="line">http://askubuntu.com/questions/541343/problems-with-libgl-fbconfigs-swrast-through-each-update</div><div class="line"><span class="comment">## 按照上面的帖子继续：</span></div><div class="line"><span class="built_in">export</span> LIBGL_DEBUG=verbose</div><div class="line">sudo apt install mesa-utils</div><div class="line">glxgears</div><div class="line">虽然这个回复是-2，但在我的电脑上好使 sudo apt-get install nvidia-331</div><div class="line">总算是运行成功了！</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/13/导航页面/" itemprop="url">
-                  导航页面
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-13T11:36:15+08:00" content="2016-12-13">
-              2016-12-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p><img src="http://o98383o2a.bkt.clouddn.com/hithepsp.png" alt=""></p>
-<h1 id="微小的贡献"><a href="#微小的贡献" class="headerlink" title="微小的贡献"></a>微小的贡献</h1><p>这几天回东北，没干成啥事，就做了一个小小的导航页面；希望能对后来的人有用。网址：<a href="http://www.hithep.site" target="_blank" rel="external">http://www.hithep.site</a>  目前域名要改成 <a href="http://www.hithep.science" target="_blank" rel="external">http://www.hithep.science</a></p>
-<h1 id="已知的问题"><a href="#已知的问题" class="headerlink" title="已知的问题"></a>已知的问题</h1><p>里面items的排布直接使用了固定长度，在高分辨率的屏幕效果不是很好，有待改进，这应该不难；域名我只买了一年，不得不面临更换域名的问题。我也想弄一个5年的域名，这样以后就不用折腾了。</p>
-<h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>这个导航主要是一些关于高能物理的信息的整理，目前我只是添加了自己以前搜集到的，还需要大家加入进来一起完善。具体使用说明，在网站首页上。当时我就在想，为什么师兄师姐没有给我们传下来多少有用的信息而让我们再自己去探索，这样的过程实在是非常之低效；等于说又在重复前人的工作而不是“站在巨人的肩膀上”。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/12/Geant4安装记录/" itemprop="url">
-                  Geant4安装记录
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-12T15:06:32+08:00" content="2016-12-12">
-              2016-12-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          <p><img src="http://geant4.cern.ch/applications/images/atlas.jpg" alt=""></p>
-<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>很久之前就说要安装Geant4，一直拖到了现在。其实在百度上一搜就有大片的资料，安装起来的确没有看起来的那么麻烦。最可能的原因就是一直没有兴趣去做这件事，没有下定决心，总是被其他事务所干扰。其实作为一个用户，我们有理由相信这样的软件仅仅是一个工具，并不具有决定性的困难，至少有很多人都掌握了它的使用。既然如此，就好好装一回：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential</div><div class="line">sudo apt-get install cmake</div><div class="line">sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libxt-dev libxmu-dev libxi-dev zlib1g-dev libgl2ps-dev libexpat1-dev libxerces-c-dev</div><div class="line">mkdir geant4</div><div class="line"><span class="built_in">cd</span> geant4</div><div class="line">sudo wget http://geant4.cern.ch/support/<span class="built_in">source</span>/geant4.10.03.tar.gz</div><div class="line">sudo tar -zxf geant4.10.03.tar.gz</div><div class="line">sudo mkdir g4build</div><div class="line">sudo mkdir g4install</div><div class="line"><span class="built_in">cd</span> g4build</div><div class="line">sudo cmake -DCMAKE_INSTALL_PREFIX=/home/arlier/geant4/g4install -DGEANT4_USE_OPENGL_X11=ON /home/arlier/geant4/geant4.10.03</div><div class="line">sudo make -j2   make过程是可以中断的</div><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/bin/</div><div class="line"><span class="built_in">source</span> ./geant4.sh</div></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/12/Geant4安装记录/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
       
     </div>

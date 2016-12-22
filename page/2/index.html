@@ -257,6 +257,350 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/13/Geant4安装2/" itemprop="url">
+                  Geant4安装2
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-13T13:19:35+08:00" content="2016-12-13">
+              2016-12-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p><img src="http://o98383o2a.bkt.clouddn.com/g4B1.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/g4hadrontherapy.jpg" alt=""><br>昨天初步完成了G4的安装，接着运行一下examples检验一下程序</p>
+<h1 id="根据之前data文件夹配置环境变量："><a href="#根据之前data文件夹配置环境变量：" class="headerlink" title="根据之前data文件夹配置环境变量："></a>根据之前data文件夹配置环境变量：</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span>  G4LEDATA=/home/you/geant4.9.6-install /data/G4EMLOW6.32</div><div class="line"><span class="built_in">export</span>  G4LEVELGAMMADATA=/home/you/geant4.9.6-install /data/PhotonEvaporation2.3</div><div class="line"><span class="built_in">export</span>  G4NEUTRONHPDATA=/home/you/geant4.9.6-install /data/G4NDL4.2</div><div class="line"><span class="built_in">export</span>  G4NEUTRONXSDATA=/home/you/geant4.9.6-install /data/G4NEUTRONXS1.2</div><div class="line"><span class="built_in">export</span>  G4PIIDATA=/home/you/geant4.9.6-install /data/G4PII1.3</div><div class="line"><span class="built_in">export</span>  G4RADIOACTIVEDATA=/home/you/geant4.9.6-install /data/RadioactiveDecay3.6</div><div class="line"><span class="built_in">export</span>  G4REALSURFACEDATA=/home/you/geant4.9.6-install /data/RealSurface1.0</div></pre></td></tr></table></figure>
+<h1 id="继续安装"><a href="#继续安装" class="headerlink" title="继续安装"></a>继续安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo mkdir buildB1</div><div class="line"><span class="built_in">cd</span> buildB1</div><div class="line"><span class="built_in">source</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/geant4make/geant4make.sh</div><div class="line">make j4</div><div class="line"><span class="comment">## 出现错误</span></div><div class="line">libGL error: No matching fbConfigs or visuals found</div><div class="line">libGL error: failed to load driver: swrast</div><div class="line"><span class="comment">## 寻找解决方案</span></div><div class="line">http://askubuntu.com/questions/541343/problems-with-libgl-fbconfigs-swrast-through-each-update</div><div class="line"><span class="comment">## 按照上面的帖子继续：</span></div><div class="line"><span class="built_in">export</span> LIBGL_DEBUG=verbose</div><div class="line">sudo apt install mesa-utils</div><div class="line">glxgears</div><div class="line">虽然这个回复是-2，但在我的电脑上好使 sudo apt-get install nvidia-331</div><div class="line">总算是运行成功了！</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/13/导航页面/" itemprop="url">
+                  导航页面
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-13T11:36:15+08:00" content="2016-12-13">
+              2016-12-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p><img src="http://o98383o2a.bkt.clouddn.com/hithepsp.png" alt=""></p>
+<h1 id="微小的贡献"><a href="#微小的贡献" class="headerlink" title="微小的贡献"></a>微小的贡献</h1><p>这几天回东北，没干成啥事，就做了一个小小的导航页面；希望能对后来的人有用。网址：<a href="http://www.hithep.site" target="_blank" rel="external">http://www.hithep.site</a>  目前域名要改成 <a href="http://www.hithep.science" target="_blank" rel="external">http://www.hithep.science</a></p>
+<h1 id="已知的问题"><a href="#已知的问题" class="headerlink" title="已知的问题"></a>已知的问题</h1><p>里面items的排布直接使用了固定长度，在高分辨率的屏幕效果不是很好，有待改进，这应该不难；域名我只买了一年，不得不面临更换域名的问题。我也想弄一个5年的域名，这样以后就不用折腾了。</p>
+<h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>这个导航主要是一些关于高能物理的信息的整理，目前我只是添加了自己以前搜集到的，还需要大家加入进来一起完善。具体使用说明，在网站首页上。当时我就在想，为什么师兄师姐没有给我们传下来多少有用的信息而让我们再自己去探索，这样的过程实在是非常之低效；等于说又在重复前人的工作而不是“站在巨人的肩膀上”。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/12/Geant4安装记录/" itemprop="url">
+                  Geant4安装记录
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-12T15:06:32+08:00" content="2016-12-12">
+              2016-12-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          <p><img src="http://geant4.cern.ch/applications/images/atlas.jpg" alt=""></p>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>很久之前就说要安装Geant4，一直拖到了现在。其实在百度上一搜就有大片的资料，安装起来的确没有看起来的那么麻烦。最可能的原因就是一直没有兴趣去做这件事，没有下定决心，总是被其他事务所干扰。其实作为一个用户，我们有理由相信这样的软件仅仅是一个工具，并不具有决定性的困难，至少有很多人都掌握了它的使用。既然如此，就好好装一回：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential</div><div class="line">sudo apt-get install cmake</div><div class="line">sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libxt-dev libxmu-dev libxi-dev zlib1g-dev libgl2ps-dev libexpat1-dev libxerces-c-dev</div><div class="line">mkdir geant4</div><div class="line"><span class="built_in">cd</span> geant4</div><div class="line">sudo wget http://geant4.cern.ch/support/<span class="built_in">source</span>/geant4.10.03.tar.gz</div><div class="line">sudo tar -zxf geant4.10.03.tar.gz</div><div class="line">sudo mkdir g4build</div><div class="line">sudo mkdir g4install</div><div class="line"><span class="built_in">cd</span> g4build</div><div class="line">sudo cmake -DCMAKE_INSTALL_PREFIX=/home/arlier/geant4/g4install -DGEANT4_USE_OPENGL_X11=ON /home/arlier/geant4/geant4.10.03</div><div class="line">sudo make -j2   make过程是可以中断的</div><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/bin/</div><div class="line"><span class="built_in">source</span> ./geant4.sh</div></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/12/Geant4安装记录/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/08/安装gcc/" itemprop="url">
                   安装gcc
                 </a>
@@ -777,355 +1121,6 @@
           
             <h1 id="继续折腾"><a href="#继续折腾" class="headerlink" title="继续折腾"></a>继续折腾</h1><p>昨天发现kterm不能再kindle上用，本来打算就放弃了。我整这个的初衷就是要在kindle上开中断，其他越狱功能并没有特别大的兴趣。今天继续在网上看看有没有新的方案，发现了VNC连接的方法，感觉还是很有希望的~~</p>
 <h1 id="vnc也不好弄"><a href="#vnc也不好弄" class="headerlink" title="vnc也不好弄"></a>vnc也不好弄</h1><p>vnc貌似是全屏连接，具体参数还得好好研究，暂时搁置了。等下次有心情再来折腾吧。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/03/kindle越狱之旅/" itemprop="url">
-                  kindle越狱之旅
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-03T19:35:04+08:00" content="2016-12-03">
-              2016-12-03
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <h1 id="为什么要越狱"><a href="#为什么要越狱" class="headerlink" title="为什么要越狱"></a>为什么要越狱</h1><p><img src="http://o98383o2a.bkt.clouddn.com/kindlezsh.jpg" alt=""><br>在<a href="http://shumeipai.nxez.com/2016/05/14/equipped-with-electronic-paper-screens-pumping-tray.html" target="_blank" rel="external">树莓派实验室</a>上看到一篇帖子，用树莓派驱动墨水屏显示，感觉真心不错，也想学着做一个。然后继续浏览发现了<a href="http://shumeipai.nxez.com/2013/10/10/raspberry-pi-pick-kindle-display.html" target="_blank" rel="external">这个帖子</a>感觉非常有意思，竟然可以用kindle当显示器，非常适合装逼啊。而且墨水屏的效果实在是好，不费眼睛，这根本忍不住要玩一玩~</p>
-<h1 id="开始越狱吧"><a href="#开始越狱吧" class="headerlink" title="开始越狱吧"></a>开始越狱吧</h1><p>上面帖子的kindle型号是kindle3，我手里没有，在淘宝搜了一下大约￥200，想想还是挺多的。于是决定冒险把我的new kindle给越狱了，虽然有些冒险。。。。</p>
-<h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p> 在网上搜到好几个相关的帖子</p>
-<ul>
-<li><a href="https://kindlefere.com/post/311.html" target="_blank" rel="external">https://kindlefere.com/post/311.html</a></li>
-<li><a href="https://kindlefere.com/post/410.html" target="_blank" rel="external">https://kindlefere.com/post/410.html</a></li>
-<li><a href="http://bbs.eeworld.com.cn/thread-437615-1-1.html" target="_blank" rel="external">http://bbs.eeworld.com.cn/thread-437615-1-1.html</a></li>
-<li><a href="http://ju.outofmemory.cn/entry/61084" target="_blank" rel="external">http://ju.outofmemory.cn/entry/61084</a></li>
-<li><a href="http://blog.chinaunix.net/uid-25906175-id-3354801.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-25906175-id-3354801.html</a><br>尤其是<a href="https://kindlefere.com/" target="_blank" rel="external">kindle伴侣</a>这个网站非常不错！</li>
-</ul>
-<h2 id="顺利越狱"><a href="#顺利越狱" class="headerlink" title="顺利越狱"></a>顺利越狱</h2><p> 按照帖子上的教程进行降级，改固件，安装插件很快就能越狱成功，也没有出现什么意外情况。<br> 安装插件USBNET，添加秘钥就可以内网ssh访问了。发现自带的zsh非常炫，果然是专业玩家啊。</p>
-<h1 id="安装terminal"><a href="#安装terminal" class="headerlink" title="安装terminal"></a>安装terminal</h1><p>终于到了最后的见证结果的时候了，按照教程安装Extend和Kterm就行了。<br>折腾了几个小时，然而插件不支持kindle7,这下麻烦了。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/30/影像·阳光/" itemprop="url">
-                  影像·阳光
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-30T14:46:32+08:00" content="2016-11-30">
-              2016-11-30
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p>当我在写博客的时候，突然发现在屏幕中一个暗淡的影像，现在才下午3点可是阳光已经很弱了，但却有一种温暖的感觉。映在屏幕里的阳光不禁让我想起来两个月前的夏天，那时候天气很热，阳光刺眼我总会拉上窗帘；而现在我竟然发现这很美。<br><img src="http://o98383o2a.bkt.clouddn.com/sunshine.jpg" alt=""></p>
-<p>也许我过于关注屏幕上特定的图案，而忽略了大自然最nature的那些东西。比如屏幕上的光场其实是一个很复杂的分布，我们仅仅提取了其中很有限的一部分。而这些和我们眼睛发生共振的光子并不比其他光子又更为独特的分布或者特性；一切的可识别仅仅是一种建立在探测器的响应范围内的约定。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/30/第一次使用git/" itemprop="url">
-                  第一次使用git
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-30T14:42:30+08:00" content="2016-11-30">
-              2016-11-30
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p>接触github好几年了，中间断断续续的，平时也就是看看别人的项目，或者clone一些东西。有几次在linux按照教程传了一些东西，没过多久就又忘记了。。。然后又得重新再找一次教程。于是决定在我的博客记录一下，这样以后用起来方便一些。<br><img src="http://o98383o2a.bkt.clouddn.com/gitico7.png" alt=""></p>
-<h1 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h1> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git init  初始化</div><div class="line">git add .</div><div class="line">git commit -m <span class="string">"xxxxx"</span>  </div><div class="line">git remote add origin git@github.com:xuhongxin/deom.git    </div><div class="line">git pull origin master</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
 
           
         
