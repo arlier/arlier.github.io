@@ -257,125 +257,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/12/13/再次搭建ss服务器/" itemprop="url">
-                  再次搭建ss服务器
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-13T19:45:03+08:00" content="2016-12-13">
-              2016-12-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <h1 id="fq"><a href="#fq" class="headerlink" title="fq"></a>fq</h1><p>之前买了一年的DO的服务器到期了，最近挺缺钱的，就只能续一个便宜点的主机了。在网上找了个hostdare的年付20$。比起之前60$少了很多；至于性能，先用用再说吧。那么现在的首要需求还是先搭建一个ss服务器。之前搭了好几次，都没有记录下来，正好这次有机会弄个详细记录，方便以后查找。</p>
-<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>以root身份执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">yum update</div><div class="line">yum install python-setuptools &amp;&amp; easy_install pip</div><div class="line">pip install shadowsocks</div><div class="line">vi /etc/shadowsocks.json</div><div class="line"></div><div class="line">&#123;</div><div class="line"><span class="string">"server"</span>:<span class="string">"103.72.76.34"</span>,</div><div class="line"><span class="string">"port_password"</span>:&#123;</div><div class="line">     <span class="string">"8381"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8382"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8383"</span>:<span class="string">"passwd"</span>,</div><div class="line">     <span class="string">"8384"</span>:<span class="string">"passwd"</span></div><div class="line">     &#125;,</div><div class="line"><span class="string">"timeout"</span>:60,</div><div class="line"><span class="string">"method"</span>:<span class="string">"rc4-md5"</span>,</div><div class="line"><span class="string">"fast_open"</span>:<span class="literal">false</span>,</div><div class="line"><span class="string">"workers"</span>:1</div><div class="line">&#125;</div><div class="line">vi /etc/rc.local</div><div class="line">ssserver -c /etc/shadowsocks.json <span class="_">-d</span> start</div></pre></td></tr></table></figure></p>
-<p>最后在手机上装好了SSR再次成功FQ，现在看起来这很容易。。。</p>
-<h1 id="主要参考："><a href="#主要参考：" class="headerlink" title="主要参考："></a>主要参考：</h1><ul>
-<li><a href="http://www.cnblogs.com/Gbeniot/p/5567187.html" target="_blank" rel="external">http://www.cnblogs.com/Gbeniot/p/5567187.html</a></li>
-<li><a href="https://www.91ssfq.com/archives/48" target="_blank" rel="external">https://www.91ssfq.com/archives/48</a></li>
-<li><a href="http://bbs.feng.com/read-htm-tid-10743703.html?shareForumUrl=1" target="_blank" rel="external">http://bbs.feng.com/read-htm-tid-10743703.html?shareForumUrl=1</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/12/13/Geant4安装2/" itemprop="url">
                   Geant4安装2
                 </a>
@@ -1129,6 +1010,119 @@
               阅读全文 &raquo;
             </a>
           </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/04/kindle越狱之旅2/" itemprop="url">
+                  kindle越狱之旅2
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-04T13:51:05+08:00" content="2016-12-04">
+              2016-12-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <h1 id="继续折腾"><a href="#继续折腾" class="headerlink" title="继续折腾"></a>继续折腾</h1><p>昨天发现kterm不能再kindle上用，本来打算就放弃了。我整这个的初衷就是要在kindle上开中断，其他越狱功能并没有特别大的兴趣。今天继续在网上看看有没有新的方案，发现了VNC连接的方法，感觉还是很有希望的~~</p>
+<h1 id="vnc也不好弄"><a href="#vnc也不好弄" class="headerlink" title="vnc也不好弄"></a>vnc也不好弄</h1><p>vnc貌似是全屏连接，具体参数还得好好研究，暂时搁置了。等下次有心情再来折腾吧。</p>
+
+          
         
       
     </div>
