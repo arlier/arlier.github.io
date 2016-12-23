@@ -84,7 +84,7 @@
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="第一次连接拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口">
 <meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/pinehtop.jpg">
-<meta property="og:updated_time" content="2016-12-22T11:07:16.668Z">
+<meta property="og:updated_time" content="2016-12-23T04:34:24.263Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="探索PINE64">
 <meta name="twitter:description" content="第一次连接拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口">
@@ -317,6 +317,7 @@
       
         <p><img src="http://o98383o2a.bkt.clouddn.com/pinehtop.jpg" alt=""></p>
 <h1 id="第一次连接"><a href="#第一次连接" class="headerlink" title="第一次连接"></a>第一次连接</h1><p>拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口扫描软件）：<br><code>pine64 192.168.1.156    ba:88:8e:64:aa:78</code>  接着通过terminal登录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ssh ubuntu@192.168.1.156</div><div class="line">password: ubuntu</div><div class="line">uname -a</div><div class="line">Linux pine64 3.10.104 #13 SMP PREEMPT Mon Dec 12 15:00:06 MYT 2016 aarch64 aarch64 aarch64 GNU/Linux=&quot;#statement&quot;</div><div class="line"># 查看发行版信息</div><div class="line">cat /etc/issue</div><div class="line">Ubuntu 16.04.1 LTS \n \l</div><div class="line">#添加su账号</div><div class="line">sudo password</div><div class="line">password: ubuntu</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h1 id="试试screen连接"><a href="#试试screen连接" class="headerlink" title="试试screen连接"></a>试试screen连接</h1><p>安装并连接screen<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt install screen</div><div class="line">screen -xR</div></pre></td></tr></table></figure></p>
 <p>这种多个设备同屏的感觉真好！screen和tmux类似都可以退出连接而不影响命令的执行，很实用。</p>
 <h1 id="VNC连接"><a href="#VNC连接" class="headerlink" title="VNC连接"></a>VNC连接</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install tightvncserver</div><div class="line">tightvncserver</div></pre></td></tr></table></figure>
