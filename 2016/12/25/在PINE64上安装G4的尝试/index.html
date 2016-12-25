@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="开始安装之前成功地在ubuntu上安装了G4，这次在Debian上安装应该会顺利一些，就是为了再熟悉一下安装过程。
 本来我用的ubuntu的PINE的系统，可是后来执行apt命令网速很慢，然后卡死了网上找了很多办法都没法解决甚至开不了机，不得不重新更换系统。之前Debian安装很顺利，但是屏幕分辨率一直不对，弄了好久也不行；然而昨天我机智地改了/boot中的配置文件，然后就调成了1080p，非常好">
-<meta property="og:updated_time" content="2016-12-25T03:05:17.444Z">
+<meta property="og:updated_time" content="2016-12-25T03:16:32.654Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在PINE64上安装G4的尝试">
 <meta name="twitter:description" content="开始安装之前成功地在ubuntu上安装了G4，这次在Debian上安装应该会顺利一些，就是为了再熟悉一下安装过程。
@@ -318,12 +318,14 @@
       
         <h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>之前成功地在ubuntu上安装了G4，这次在Debian上安装应该会顺利一些，就是为了再熟悉一下安装过程。</p>
 <p>本来我用的ubuntu的PINE的系统，可是后来执行apt命令网速很慢，然后卡死了网上找了很多办法都没法解决甚至开不了机，不得不重新更换系统。之前Debian安装很顺利，但是屏幕分辨率一直不对，弄了好久也不行；然而昨天我机智地改了/boot中的配置文件，然后就调成了1080p，非常好。据说Debian也比较稳定。对了，昨天ubuntu被玩坏就是因为我想安装一个3070的USB无线网卡，由于不能自动识别所以要编译驱动，结果编译了好几次都出错；然后在升级apt和linux内核的过程中系统死了。但是Debian是直接可以识别这块网卡的，而且网速非常快。</p>
-<a id="more"></a>
+<p>其实这就是在折腾，没什么明显的必要；我只是在尝试这种在非完整版系统上运行软件的可能性。就像当初内存卡无法识别一样，我发现是电脑的读卡器有一根针弯了，然后拨回来就能读出了；接着再用diskgenius重新分区重建MBR就好了。前几天我安卓手机只能识别出一个SIM卡，打开发现由于经常插拔造成卡槽的一根针断了，于是找了一根订书针接上了，也许这就是物理神奇的地方。一些law是如此稳定而普遍地成立，从而让你觉得这很美，对此坚信无疑。<br><a id="more"></a></p>
 <ul>
 <li>查看gcc版本 gcc -v<br>   gcc version 4.9.2 (Debian/Linaro 4.9.2-10)</li>
 <li>sudo apt-get install build-essential</li>
 <li>sudo apt-get install cmake</li>
-<li>sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libxt-dev libxmu-dev libxi-dev zlib1g-dev libgl2ps-dev    libexpat1-dev libxerces-c-dev<br>-<br>-</li>
+<li>sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libxt-dev libxmu-dev libxi-dev zlib1g-dev libgl2ps-dev    libexpat1-dev libxerces-c-dev</li>
+<li>mkdir geant4;cd geant4</li>
+<li>sudo wget <a href="http://geant4.cern.ch/support/source/geant4.10.03.tar.gz" target="_blank" rel="external">http://geant4.cern.ch/support/source/geant4.10.03.tar.gz</a><br>不得不说这个源码挺小的，只有33M，真的很厉害。</li>
 </ul>
 
       
@@ -376,7 +378,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/23/apt-get被锁/" rel="next" title="apt-get被锁">
+              <a href="/2016/12/24/apt-get被锁/" rel="next" title="apt-get被锁">
                 <i class="fa fa-chevron-left"></i> apt-get被锁
               </a>
             
