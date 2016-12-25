@@ -84,7 +84,7 @@
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="第一次连接拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口">
 <meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/pinehtop.jpg">
-<meta property="og:updated_time" content="2016-12-23T04:34:24.263Z">
+<meta property="og:updated_time" content="2016-12-23T14:08:01.620Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="探索PINE64">
 <meta name="twitter:description" content="第一次连接拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口">
@@ -322,7 +322,7 @@
 <p>这种多个设备同屏的感觉真好！screen和tmux类似都可以退出连接而不影响命令的执行，很实用。</p>
 <h1 id="VNC连接"><a href="#VNC连接" class="headerlink" title="VNC连接"></a>VNC连接</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install tightvncserver</div><div class="line">tightvncserver</div></pre></td></tr></table></figure>
 <h1 id="播放音乐"><a href="#播放音乐" class="headerlink" title="播放音乐"></a>播放音乐</h1><h2 id="安装MPLAYER"><a href="#安装MPLAYER" class="headerlink" title="安装MPLAYER"></a>安装MPLAYER</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install mplayer2</div></pre></td></tr></table></figure>
-<p>##下载音乐<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 下载一个mp3文件，或者其他方法得到一个音乐文件</span></div><div class="line">wget http://blog.lxx1.com/wp-content/uploads/2016/07/shero.mp3</div><div class="line">mplayer shero.mp3</div></pre></td></tr></table></figure></p>
+<p>##下载音乐<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 下载一个mp3文件，或者其他方法得到一个音乐文件</span></div><div class="line">wget http://blog.lxx1.com/wp-content/uploads/2016/07/shero.mp3</div><div class="line">wget http://7xsihg.com1.z0.glb.clouddn.com/xfssg.mp3</div><div class="line">mplayer shero.mp3</div></pre></td></tr></table></figure></p>
 <p>貌似一直没有音频输出，尝试google了好几种方法也不行，暂时放弃了。这个问题类似于树莓派中的音频设置，但又不一样。<br>sudo gedit /etc/modprobe.d/alsa-base.conf</p>
 
       
