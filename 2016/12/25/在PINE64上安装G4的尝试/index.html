@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="mapping the observed world to our imagination">
 <meta property="og:description" content="开始安装之前成功地在ubuntu上安装了G4，这次在Debian上安装应该会顺利一些，就是为了再熟悉一下安装过程。
 本来我用的ubuntu的PINE的系统，可是后来执行apt命令网速很慢，然后卡死了网上找了很多办法都没法解决甚至开不了机，不得不重新更换系统。之前Debian安装很顺利，但是屏幕分辨率一直不对，弄了好久也不行；然而昨天我机智地改了/boot中的配置文件，然后就调成了1080p，非常好">
-<meta property="og:updated_time" content="2016-12-25T03:16:32.654Z">
+<meta property="og:updated_time" content="2016-12-25T06:43:21.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在PINE64上安装G4的尝试">
 <meta name="twitter:description" content="开始安装之前成功地在ubuntu上安装了G4，这次在Debian上安装应该会顺利一些，就是为了再熟悉一下安装过程。
@@ -326,6 +326,23 @@
 <li>sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libxt-dev libxmu-dev libxi-dev zlib1g-dev libgl2ps-dev    libexpat1-dev libxerces-c-dev</li>
 <li>mkdir geant4;cd geant4</li>
 <li>sudo wget <a href="http://geant4.cern.ch/support/source/geant4.10.03.tar.gz" target="_blank" rel="external">http://geant4.cern.ch/support/source/geant4.10.03.tar.gz</a><br>不得不说这个源码挺小的，只有33M，真的很厉害。</li>
+<li>sudo tar -zxvf geant4.10.03.tar.gz   还是加上v参数输出下信息比较好，不然会以为卡死了。</li>
+<li>sudo mkdir g4build;sudo mkdir g4install;cd g4build</li>
+<li>sudo cmake -DCMAKE_INSTALL_PREFIX=/home/debian/work/geant4/g4install -DGEANT4_USE_OPENGL_X11=ON /home/debian/work/geant4/geant4.10.03<br>提示：CMake Error at CMakeLists.txt:25 (cmake_minimum_required):<br>CMake 3.3 or higher is required.  You are running version 3.0.2</li>
+<li>查看版本信息 cmake –version<br>cmake version 3.0.2<br>CMake suite maintained and supported by Kitware (kitware.com/cmake).<br>这下需要对cmake进行升级了。参考<a href="http://askubuntu.com/questions/610291/how-to-install-cmake-3-2-on-ubuntu-14-04" target="_blank" rel="external">http://askubuntu.com/questions/610291/how-to-install-cmake-3-2-on-ubuntu-14-04</a></li>
+<li>sudo apt-get install software-properties-common</li>
+<li>sudo add-apt-repository ppa:george-edison55/cmake-3.x</li>
+<li><p>sudo apt-get update  我用的是arm，这里提示有错。。。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">W: GPG error: http://ftp.us.debian.org jessie Release: The following signatures were invalid: BADSIG 8B48AD6246925553 Debian Archive Automatic Signing Key (7.0/wheezy)</div><div class="line"> &lt;ftpmaster@debian.org&gt;W: Failed to fetch http://ppa.launchpad.net/george-edison55/cmake-3.x/ubuntu/dists/jessie/main/binary-arm64/Packages  404  Not Found</div><div class="line">W: Failed to fetch http://ppa.launchpad.net/george-edison55/cmake-3.x/ubuntu/dists/jessie/main/binary-armhf/Packages  404  Not Found</div><div class="line">E: Some index files failed to download. They have been ignored, or old ones used instead.</div></pre></td></tr></table></figure>
+</li>
+<li><p>若没有安装cmake，则<br>sudo apt-get instal cmake</p>
+</li>
+<li>若已经安装了cmake，则<br>sudo apt-get upgrade<br>这个方法还是不行<h1 id="继续尝试"><a href="#继续尝试" class="headerlink" title="继续尝试"></a>继续尝试</h1>再参考这篇文章<a href="http://www.linuxidc.com/Linux/2012-10/72216.htm" target="_blank" rel="external">http://www.linuxidc.com/Linux/2012-10/72216.htm</a></li>
+<li>卸载sudo apt-get autoremove cmake</li>
+<li>cd /usr</li>
+<li>sudo wget <a href="https://cmake.org/files/v3.7/cmake-3.7.1-Linux-x86_64.tar.gz" target="_blank" rel="external">https://cmake.org/files/v3.7/cmake-3.7.1-Linux-x86_64.tar.gz</a> 下载最新版</li>
+<li>sudo tar zxvf cmake-3.7.1-Linux-x86_64.tar.gz<br>创建链接</li>
+<li>sudo ln -s /usr/cmake-3.7.1-Linux-x86_64/bin/* /usr/bin/<br>然后还是不能执行cmake -version， 突然明白，我应该装arm的而不是x86的！！cmake官网没有编译好的，所以下载源码自己编译就行了。<br>sudo wget <a href="https://cmake.org/files/v3.7/cmake-3.7.1.tar.gz" target="_blank" rel="external">https://cmake.org/files/v3.7/cmake-3.7.1.tar.gz</a></li>
 </ul>
 
       
