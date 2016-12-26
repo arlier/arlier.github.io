@@ -86,7 +86,7 @@
 <meta property="og:description" content="开始安装之前成功地在ubuntu上安装了G4，这次在Debian上安装应该会顺利一些，就是为了再熟悉一下安装过程。
 本来我用的ubuntu的PINE的系统，可是后来执行apt命令网速很慢，然后卡死了网上找了很多办法都没法解决甚至开不了机，不得不重新更换系统。之前Debian安装很顺利，但是屏幕分辨率一直不对，弄了好久也不行；然而昨天我机智地改了/boot中的配置文件，然后就调成了1080p，非常好">
 <meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/cmakeup.jpg">
-<meta property="og:updated_time" content="2016-12-26T03:31:21.678Z">
+<meta property="og:updated_time" content="2016-12-26T11:55:58.488Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在PINE64上安装G4的尝试">
 <meta name="twitter:description" content="开始安装之前成功地在ubuntu上安装了G4，这次在Debian上安装应该会顺利一些，就是为了再熟悉一下安装过程。
@@ -364,6 +364,7 @@
 </ul>
 <h1 id="然后提示磁盘空间不足"><a href="#然后提示磁盘空间不足" class="headerlink" title="然后提示磁盘空间不足"></a>然后提示磁盘空间不足</h1><p>又得解决这个问题，都怪当初没有先进行分区。32g的内存卡应该还有20多g的空间。<br>参考这篇文章进行操作： <a href="http://www.ituring.com.cn/article/261283" target="_blank" rel="external">http://www.ituring.com.cn/article/261283</a><br>这个方法也有问题，重启之后会卡在开机界面，好久进不去，只能放弃，然后用<a href="http://arlier.work/2016/12/26/PINE64%E5%86%85%E5%AD%98%E5%8D%A1%E6%9B%B4%E6%94%B9%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/" target="_blank" rel="external">另一种方法</a>才弄好</p>
 <h1 id="继续安装"><a href="#继续安装" class="headerlink" title="继续安装"></a>继续安装</h1><p>这次磁盘空间调整后变成了31G，再也不担心了；然后我一想树莓派也是Debian的系统，为何不一起装一下，反正又不影响什么。<br>只是在安装的过程中我发现，虽然PINE64的配置要比树莓派高，但无论是下载速度还是解压、编译的速度明显都比树莓派慢很多。当然这里面的影响因素比较多，我初步猜测是因为内存卡读写的原因（树莓派的内存卡比较好）。看来下次真得用一个好一点的存储卡了。</p>
+<p>安装过程内存卡非常不稳定，还经常断网，很麻烦。断网之后删除已经安装的内容，结果读写错误，使用<code>dmesg</code>看到一大堆文件错误。</p>
 
       
     </div>

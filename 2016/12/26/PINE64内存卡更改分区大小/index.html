@@ -89,7 +89,7 @@
 调整PINE的内存卡分区参考文章 http://blog.csdn.net/c80486/article/details/8460304
 
 查看分区信息  sudo fdisk  /dev/mmcblk0   这是mmcblk0盘，有p0,p1两个分区p0是boot分区，p1是系统分区。我需要将p1的7个">
-<meta property="og:updated_time" content="2016-12-26T03:34:11.760Z">
+<meta property="og:updated_time" content="2016-12-26T13:26:11.941Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PINE64内存卡更改分区大小">
 <meta name="twitter:description" content="昨天安装geant4的过程中发现磁盘不够用了，装了一天白费了；只能格式化内存卡进行重新分区。
@@ -329,7 +329,7 @@
 <li>输入p，查看分区信息，记住linux分区p1的开始扇区位置，144860</li>
 <li>输入d再输入2，也就是删除linux分区</li>
 <li>输入n，新建分区，开始扇区选择144860（也就是linux的开始扇区），结束扇区选择默认的最大值</li>
-<li>输入w保存分区信息<br>重启，执行<code>sudo resize2fs /dev/mmcblk0</code>，就可以看到新的分区了，这个方法相对简单一些。</li>
+<li>输入w保存分区信息<br>重启，执行<code>sudo resize2fs /dev/mmcblk0p2</code>，就可以看到新的分区了，这个方法相对简单一些。</li>
 </ul>
 
       
@@ -389,6 +389,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/26/正式学习SolidWorks/" rel="prev" title="正式学习SolidWorks">
+                正式学习SolidWorks <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>

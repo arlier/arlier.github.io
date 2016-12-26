@@ -257,6 +257,212 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/26/树莓派上运行GEANT4/" itemprop="url">
+                  树莓派上运行GEANT4
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-26T23:13:02+08:00" content="2016-12-26">
+              2016-12-26
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p><img src="http://o98383o2a.bkt.clouddn.com/pigeant41.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/pigeant42.jpg" alt=""></p>
+<h1 id="竟然成功了"><a href="#竟然成功了" class="headerlink" title="竟然成功了"></a>竟然成功了</h1><p>经过一番努力和尝试，我真的在树莓派上运行了GEANT4，整个安装过程和ubuntu系统几乎一模一样，因为ubuntu也是基于Debian的。只是安装过程可能会出现一些意外，需要一一去解决。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/26/正式学习SolidWorks/" itemprop="url">
+                  正式学习SolidWorks
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-26T22:59:19+08:00" content="2016-12-26">
+              2016-12-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p><img src="http://o98383o2a.bkt.clouddn.com/first.JPG" alt=""><br>安装了个2015的破解版，根据youtube上的视频学，看起来非常有意思。一直没找到合适的机会学习，现在来看这个软件真的很强大，很方便，而且学起来不难。软件对细节的处理很到位，适合精密的设计和开发；相比而言sketchup就是那种可以快速得到原型的软件。。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/26/PINE64内存卡更改分区大小/" itemprop="url">
                   PINE64内存卡更改分区大小
                 </a>
@@ -326,7 +532,7 @@
 <li>输入p，查看分区信息，记住linux分区p1的开始扇区位置，144860</li>
 <li>输入d再输入2，也就是删除linux分区</li>
 <li>输入n，新建分区，开始扇区选择144860（也就是linux的开始扇区），结束扇区选择默认的最大值</li>
-<li>输入w保存分区信息<br>重启，执行<code>sudo resize2fs /dev/mmcblk0</code>，就可以看到新的分区了，这个方法相对简单一些。</li>
+<li>输入w保存分区信息<br>重启，执行<code>sudo resize2fs /dev/mmcblk0p2</code>，就可以看到新的分区了，这个方法相对简单一些。</li>
 </ul>
 
           
@@ -900,237 +1106,6 @@
 <h1 id="第一次连接"><a href="#第一次连接" class="headerlink" title="第一次连接"></a>第一次连接</h1><p>拿到pine64之后装了好几个系统，发现ubuntu问题最少，其他的总是有一些小问题，比如分辨率之类的。由于PINE64本身不带wifi，只能用网线连接，或者尝试USB网卡。加上目前我并不需要用它的桌面，所以ssh就行了；于是一根电源线加上一根网线就能工作了。这和树莓派只要一根电源线的风格太像了，不跑图形界面可以节省资源，功耗也小，这都是我需要的。在路由器后台查看ip信息（或者使用端口扫描软件）：<br><code>pine64 192.168.1.156    ba:88:8e:64:aa:78</code>  接着通过terminal登录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ssh ubuntu@192.168.1.156</div><div class="line">password: ubuntu</div><div class="line">uname -a</div><div class="line">Linux pine64 3.10.104 #13 SMP PREEMPT Mon Dec 12 15:00:06 MYT 2016 aarch64 aarch64 aarch64 GNU/Linux=&quot;#statement&quot;</div><div class="line"># 查看发行版信息</div><div class="line">cat /etc/issue</div><div class="line">Ubuntu 16.04.1 LTS \n \l</div><div class="line">#添加su账号</div><div class="line">sudo password</div><div class="line">password: ubuntu</div></pre></td></tr></table></figure></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/12/22/探索PINE64/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/20/破解隔壁的wifi/" itemprop="url">
-                  破解隔壁的wifi
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-20T20:01:50+08:00" content="2016-12-20">
-              2016-12-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          <h1 id="再次破解wifi"><a href="#再次破解wifi" class="headerlink" title="再次破解wifi"></a>再次破解wifi</h1><p>前段时间破解的wifi被发现了，主人改了密码，又连不上了。不开心啊。<br>上次所谓破解其实就是用万能钥匙连上wifi，然后通过手机查看到密码，再通过路由器中继信号，没什么技术含量。只能说万能钥匙这种软件太随意了，一不小心就泄露了密码。</p>
-<p>其实当时我也想过去黑一下路由器的，结果技术太弱了；尝试了几次后台密码都没进去，默认的那些都试了不行；看来是主人改了密码。这种理论上也是可以用暴力破解的软件的，但我懒得去弄了，反正可以上网就行。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/20/破解隔壁的wifi/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/20/我的PINE64/" itemprop="url">
-                  我的PINE64
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-20T11:04:18+08:00" content="2016-12-20">
-              2016-12-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          <p><img src="http://o98383o2a.bkt.clouddn.com/pine0.jpg" alt=""></p>
-<h1 id="PINE"><a href="#PINE" class="headerlink" title="PINE~~~"></a>PINE~~~</h1><p>在网上看到几篇关于odroid c2运行ubuntu的帖子，感觉还挺好玩的于是去搜索相关单板计算机的内容。后来发现了我比较喜欢的PINE64，于是决定买一块。在官网上号称15$的是512M内存的低配版，看了大家的评价不是很流畅，于是果断在淘宝买了个2G的版本。</p>
-<p>昨天上午下单，今天早上就收到了，好快！快递显示北京发出的，看起来还是过了海关的样子；只是价格写的是5$,呵呵。<br><img src="http://o98383o2a.bkt.clouddn.com/pine64.jpg" alt=""><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/20/我的PINE64/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
