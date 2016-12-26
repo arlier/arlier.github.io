@@ -257,123 +257,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/13/ubuntu安装texlive2016/" itemprop="url">
-                  ubuntu安装texlive2016
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-13T01:47:50+08:00" content="2016-11-13">
-              2016-11-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p>为了在本地使用latex和beamer，又重新安装了一遍texlive：</p>
-<h1 id="从镜像站下载安装包"><a href="#从镜像站下载安装包" class="headerlink" title="从镜像站下载安装包"></a>从镜像站下载安装包</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://mirrors.ctan.org/systems/texlive/Images/texlive2016.iso</div></pre></td></tr></table></figure>
-<p>国内高校的镜像站也有对应的文件，很容易搜到。</p>
-<h1 id="安装依赖包用来升级和检验文件"><a href="#安装依赖包用来升级和检验文件" class="headerlink" title="安装依赖包用来升级和检验文件"></a>安装依赖包用来升级和检验文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libdigest-perl-md5-perl perl-tk</div></pre></td></tr></table></figure>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">su        // to be root</div><div class="line">mount -o loop texlive2015.iso  /mnt/</div><div class="line">cd /mnt</div><div class="line">./install-tl</div></pre></td></tr></table></figure>
-<h1 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h1><p>在~/.bashrc中加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PATH=/usr/local/texlive/2015/bin/x86_64-linux:$PATH; export PATH</div><div class="line">MANPATH=/usr/local/texlive/2015/texmf-dist/doc/man:$MANPATH; export MANPATH</div><div class="line">INFOPATH=/usr/local/texlive/2015/texmf-dist/doc/info:$INFOPATH; export INFOPATH</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/11/03/标准的稳定性/" itemprop="url">
                   标准的稳定性
                 </a>
@@ -1127,6 +1010,131 @@
           
             <p> 最近发现<a href="http://www.docs.google.com" target="_blank" rel="external">谷歌文档</a>和<a href="http://www.overleaf.com" target="_blank" rel="external">overleaf</a>非常好用。在线保存，历史版本，实在太方便！</p>
 <p> 这几天TEXIDE崩溃了，我的文档和数据暂时都拿不出来了，小公司果然不可靠，果断转移到大公司的产品。谷歌文档就不说了，基本上满足你的一切文字处理需求；overleaf现在对中文的支持也很好了，可以自定义字体；使用自己上传的字体再加上网上的模板，简直太好用；而且支持实时预览！编辑器也是无可挑剔，总之就是完美，至少接近完美了。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/10/关于提问/" itemprop="url">
+                  关于提问
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-10T22:40:29+08:00" content="2016-09-10">
+              2016-09-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>关于提问，在网上看到一篇文章，虽然不全同意但也值得思考：</p>
+<blockquote>
+<ul>
+<li>不经思考的提问十分有害。</li>
+<li>对所谓经过思考的提问也表示怀疑，因为只要经过思考问题都能解决。换句话说，所谓经过思考的提问也是害己的。</li>
+<li>提问是一种害人的行为，因为浪费他人的时间精力，并且比他人自己研究还要费事，因为他人还得揣测提问者遇到的情况。</li>
+<li>新手要想提高，必须要学会自己解答问题。</li>
+<li>所谓自己解答问题，就是带着问题学习、分析，问题是有的，但是只提给自己，而不是向别人提问。</li>
+<li>将自己的经验分享，比回答别人的问题更有意义。</li>
+</ul>
+</blockquote>
+<p>个人觉得在目前强大的搜索引擎的支持下，大部分问题都可以直接或间接找到答案；如果找不到，要么是这个问题很难，要么是它根本算不上一个问题。就像当年泡利所说<code>not even wrong</code>；理论上说要提出一个好的问题，是需要想当的水平的，如果你对某个东西稍有了解而且碰到了某个困难，这时一个更好的选择也许是详细全面地学习，而不是急切地提出问题。</p>
+<p>在很多领域都是这样的，当你有了更加深入，更高层面的理解之后你会发现你之前所谓的疑惑和问题的本质。用一句鸡汤的话“读书太少，想的太多”；想的多不是错，最好不要急于发表观点或者问题，记录下来，得到详细可靠的依据之后再去发表。</p>
+<p>常常看到一些大牛很少和别人争论，我想这是值得学习的；因为争论很可能带了过多的非理性成分，这对探究科学问题并没有什么好处。一般而言，我们只需要正常的学术交流和讨论就行了，说服某个或某些特定的人并没有明显的作用反而会浪费时间和感情；因此对于一些不同的观点，我们通过思考得出自己的观点即可，这一观点的对错不因某人的支持或反对而改变。</p>
 
           
         
