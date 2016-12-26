@@ -257,6 +257,237 @@
             
               
                 
+                <a class="post-title-link" href="/2016/11/13/ubuntu安装texlive2016/" itemprop="url">
+                  ubuntu安装texlive2016
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-13T01:47:50+08:00" content="2016-11-13">
+              2016-11-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>为了在本地使用latex和beamer，又重新安装了一遍texlive：</p>
+<h1 id="从镜像站下载安装包"><a href="#从镜像站下载安装包" class="headerlink" title="从镜像站下载安装包"></a>从镜像站下载安装包</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://mirrors.ctan.org/systems/texlive/Images/texlive2016.iso</div></pre></td></tr></table></figure>
+<p>国内高校的镜像站也有对应的文件，很容易搜到。</p>
+<h1 id="安装依赖包用来升级和检验文件"><a href="#安装依赖包用来升级和检验文件" class="headerlink" title="安装依赖包用来升级和检验文件"></a>安装依赖包用来升级和检验文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libdigest-perl-md5-perl perl-tk</div></pre></td></tr></table></figure>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">su        // to be root</div><div class="line">mount -o loop texlive2015.iso  /mnt/</div><div class="line">cd /mnt</div><div class="line">./install-tl</div></pre></td></tr></table></figure>
+<h1 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h1><p>在~/.bashrc中加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PATH=/usr/local/texlive/2015/bin/x86_64-linux:$PATH; export PATH</div><div class="line">MANPATH=/usr/local/texlive/2015/texmf-dist/doc/man:$MANPATH; export MANPATH</div><div class="line">INFOPATH=/usr/local/texlive/2015/texmf-dist/doc/info:$INFOPATH; export INFOPATH</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/03/标准的稳定性/" itemprop="url">
+                  标准的稳定性
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-03T01:52:20+08:00" content="2016-11-03">
+              2016-11-03
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>有很多时候我制定了一些标准，开始认真地去执行，然后由于一些偶然事件被中断，后来就不了了之了。比如坚持跑步，坚持写文档，坚持翻译一本出，坚持读书。。。后来我又改进了这些计划，执行了几天又中断了。很多事情如此都是如此，不得不反思这是为什么，因为我想要做的事情太多了吗？还是因为自己的控制力不够？</p>
+<p>渐渐明白任何的坚持都要付出代价，不管是你埋在心里的某个梦想还是你写在桌前的一个日常计划，这通常意味着你要做出选择。更直白地说，选择其实就是放弃，如果你放不下就会烦恼。“鹪鹩巢于深林,不过一枝;偃鼠饮河,不过满腹。”任何人的需求都是有限的，而索取是人类进化而带来的根植于基因的本性，这是一个内在的矛盾。人们经常会将“智慧”和“舍得”联系起来，从历史唯物主义的观点来看任何一个个体的拥有都依赖于时代，依赖于生产力的发展。从这样的角度来看，所谓的“拥有”本身就是一个非常狭义的有非常具体约束的定义；如果将整个人类视为一个整体，那么它要处理的事实上适合其他生物以及整个自然的关系。而整个人类的内部是依赖于大量的“约定”来运行的，这些约定就像语言一样，只对认同和愿意遵守的人产生明确的意义。</p>
+<p>扯得有点远，热力学第二定律一直在主导者我们的世界，这些问题终归都来自于它，需求合理的解决方法自然就是 <code>The second law of thermodynamic</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/25/rc配置文件/" itemprop="url">
                   rc配置文件
                 </a>
@@ -924,267 +1155,11 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/10/关于提问/" itemprop="url">
-                  关于提问
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-10T22:40:29+08:00" content="2016-09-10">
-              2016-09-10
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p>关于提问，在网上看到一篇文章，虽然不全同意但也值得思考：</p>
-<blockquote>
-<ul>
-<li>不经思考的提问十分有害。</li>
-<li>对所谓经过思考的提问也表示怀疑，因为只要经过思考问题都能解决。换句话说，所谓经过思考的提问也是害己的。</li>
-<li>提问是一种害人的行为，因为浪费他人的时间精力，并且比他人自己研究还要费事，因为他人还得揣测提问者遇到的情况。</li>
-<li>新手要想提高，必须要学会自己解答问题。</li>
-<li>所谓自己解答问题，就是带着问题学习、分析，问题是有的，但是只提给自己，而不是向别人提问。</li>
-<li>将自己的经验分享，比回答别人的问题更有意义。</li>
-</ul>
-</blockquote>
-<p>个人觉得在目前强大的搜索引擎的支持下，大部分问题都可以直接或间接找到答案；如果找不到，要么是这个问题很难，要么是它根本算不上一个问题。就像当年泡利所说<code>not even wrong</code>；理论上说要提出一个好的问题，是需要想当的水平的，如果你对某个东西稍有了解而且碰到了某个困难，这时一个更好的选择也许是详细全面地学习，而不是急切地提出问题。</p>
-<p>在很多领域都是这样的，当你有了更加深入，更高层面的理解之后你会发现你之前所谓的疑惑和问题的本质。用一句鸡汤的话“读书太少，想的太多”；想的多不是错，最好不要急于发表观点或者问题，记录下来，得到详细可靠的依据之后再去发表。</p>
-<p>常常看到一些大牛很少和别人争论，我想这是值得学习的；因为争论很可能带了过多的非理性成分，这对探究科学问题并没有什么好处。一般而言，我们只需要正常的学术交流和讨论就行了，说服某个或某些特定的人并没有明显的作用反而会浪费时间和感情；因此对于一些不同的观点，我们通过思考得出自己的观点即可，这一观点的对错不因某人的支持或反对而改变。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/08/如何阅读文献/" itemprop="url">
-                  如何阅读文献
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-08T14:54:53+08:00" content="2016-09-08">
-              2016-09-08
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          <p>《怎样阅读论文》<br>from：\url{<a href="http://ccr.sigcomm.org/online/files/p83-keshavA.pdf}">http://ccr.sigcomm.org/online/files/p83-keshavA.pdf}</a></p>
-<h1 id="三次阅读法读文献"><a href="#三次阅读法读文献" class="headerlink" title="三次阅读法读文献"></a>三次阅读法读文献</h1><p> <code>这一方法的核心在于将一篇文献阅读三次而不是一次从头读到尾</code>，每一次阅读都建立在上一次的基础上并且有特定的目标：第一次是获得文章的主要观点；第二次掌握内容，但不是很具体；第三次深度理解文章。</p>
-<p>第一次阅读只需要快速浏览，决定是否有必要继续阅读。这一次阅读大概5到10分钟即可，具体的步骤：</p>
-<ul>
-<li>认真阅读标题、摘要、引言</li>
-<li>阅度章节和子标题，忽略其它的内容</li>
-<li>阅读结论</li>
-<li>浏览参考文献，标出已经读过的</li>
-</ul>
-<p>在第一次阅读完成后，你应该可以回答：</p>
-<ul>
-<li>这是那种类型的文章？</li>
-<li>它和哪些文章相关？分析和解决问题的理论基础是什么？</li>
-<li>作者的假设是不是有效的?</li>
-<li>这篇文章的主要贡献是什么？</li>
-<li>辨别这篇文章写的好不好？</li>
-</ul>
-<p>根据上面这些信息，你就可以判断是不是需要进一步的阅读；同样的当你写一篇文章时，你应该预期读者仅仅会浏览一下你的文章，所以要谨慎地选择章节标题和小标题以及简洁的、易于理解的摘要和结论。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/08/如何阅读文献/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 

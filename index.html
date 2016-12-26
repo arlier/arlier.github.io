@@ -257,6 +257,218 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/26/PINE64内存卡更改分区大小-1/" itemprop="url">
+                  PINE64内存卡更改分区大小
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-26T11:22:30+08:00" content="2016-12-26">
+              2016-12-26
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/26/PINE64内存卡更改分区大小/" itemprop="url">
+                  PINE64内存卡更改分区大小
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-26T11:09:08+08:00" content="2016-12-26">
+              2016-12-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>昨天安装geant4的过程中发现磁盘不够用了，装了一天白费了；只能格式化内存卡进行重新分区。</p>
+<h1 id="调整PINE的内存卡分区"><a href="#调整PINE的内存卡分区" class="headerlink" title="调整PINE的内存卡分区"></a>调整PINE的内存卡分区</h1><p>参考文章 <a href="http://blog.csdn.net/c80486/article/details/8460304" target="_blank" rel="external">http://blog.csdn.net/c80486/article/details/8460304</a></p>
+<ul>
+<li>查看分区信息  sudo fdisk  /dev/mmcblk0   这是mmcblk0盘，有p0,p1两个分区<br>p0是boot分区，p1是系统分区。<br>我需要将p1的7个g改成30个g，因为我的内存卡是32g的。</li>
+<li>输入p，查看分区信息，记住linux分区p1的开始扇区位置，144860</li>
+<li>输入d再输入2，也就是删除linux分区</li>
+<li>输入n，新建分区，开始扇区选择144860（也就是linux的开始扇区），结束扇区选择默认的最大值</li>
+<li>输入w保存分区信息<br>重启，执行<code>sudo resize2fs /dev/sda2</code>，就可以看到新的分区了，这个方法相对简单一些。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/25/在PINE64上安装G4的尝试/" itemprop="url">
                   在PINE64上安装G4的尝试
                 </a>
@@ -924,241 +1136,11 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/20/我的PINE64/" itemprop="url">
-                  我的PINE64
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-20T11:04:18+08:00" content="2016-12-20">
-              2016-12-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          <p><img src="http://o98383o2a.bkt.clouddn.com/pine0.jpg" alt=""></p>
-<h1 id="PINE"><a href="#PINE" class="headerlink" title="PINE~~~"></a>PINE~~~</h1><p>在网上看到几篇关于odroid c2运行ubuntu的帖子，感觉还挺好玩的于是去搜索相关单板计算机的内容。后来发现了我比较喜欢的PINE64，于是决定买一块。在官网上号称15$的是512M内存的低配版，看了大家的评价不是很流畅，于是果断在淘宝买了个2G的版本。</p>
-<p>昨天上午下单，今天早上就收到了，好快！快递显示北京发出的，看起来还是过了海关的样子；只是价格写的是5$,呵呵。<br><img src="http://o98383o2a.bkt.clouddn.com/pine64.jpg" alt=""><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/20/我的PINE64/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/20/中微子-神秘的粒子/" itemprop="url">
-                  中微子-神秘的粒子
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-20T10:13:32+08:00" content="2016-12-20">
-              2016-12-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/物理/" itemprop="url" rel="index">
-                    <span itemprop="name">物理</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          <h1 id="神秘的粒子"><a href="#神秘的粒子" class="headerlink" title="神秘的粒子"></a>神秘的粒子</h1><p>去年选择研究课题时，我选择了中微子的方向。当时仅仅是觉得这很有意思，那时候对粒子物理也不是很了解，只是看了以下科普的东西。后来学习了量子场论，粒子物理才开始进入到粒子物理的真正的学习中。经过了一年多之后，依然觉得自己的水平太弱，很多基本的理论都还没有搞清楚。所以每次读文献的时候总是迷迷糊糊的，看着看着就不知道作者的意思了。于是决定找一篇基本的介绍先好好读几遍。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/20/中微子-神秘的粒子/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
