@@ -77,17 +77,17 @@
 
 
 
-<meta name="description" content="不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。">
+<meta name="description" content="不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。添加了一些自己的改动，比如距离过年和毕业的时间。还在中间加了个每日信息，放了些平假名学学。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="kindle天气显示">
 <meta property="og:url" content="http://yoursite.com/2016/12/27/kindle天气显示/index.html">
 <meta property="og:site_name" content="mapping the observed world to our imagination">
-<meta property="og:description" content="不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。">
+<meta property="og:description" content="不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。添加了一些自己的改动，比如距离过年和毕业的时间。还在中间加了个每日信息，放了些平假名学学。">
 <meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/kinweather.jpg">
-<meta property="og:updated_time" content="2016-12-29T14:23:48.552Z">
+<meta property="og:updated_time" content="2016-12-29T14:33:56.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="kindle天气显示">
-<meta name="twitter:description" content="不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。">
+<meta name="twitter:description" content="不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。添加了一些自己的改动，比如距离过年和毕业的时间。还在中间加了个每日信息，放了些平假名学学。">
 <meta name="twitter:image" content="http://o98383o2a.bkt.clouddn.com/kinweather.jpg">
 
 
@@ -315,7 +315,7 @@
       
 
       
-        <p><img src="http://o98383o2a.bkt.clouddn.com/kinweather.jpg" alt=""><br>不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。<br><a id="more"></a></p>
+        <p><img src="http://o98383o2a.bkt.clouddn.com/kinweather.jpg" alt=""><br>不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。添加了一些自己的改动，比如距离过年和毕业的时间。还在中间加了个每日信息，放了些平假名学学。<br><a id="more"></a></p>
 <h1 id="安装记录"><a href="#安装记录" class="headerlink" title="安装记录"></a>安装记录</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /home/</div><div class="line">mkdir weatherdisp</div><div class="line">yum install git</div><div class="line">git <span class="built_in">clone</span> https://github.com/mpetroff/kindle-weather-display.git</div><div class="line">mkdir weatheroutput</div><div class="line"><span class="built_in">cd</span> kindle-weather-display/</div><div class="line"><span class="built_in">cd</span> server/</div><div class="line">vi weather-script.sh   修改了路径</div><div class="line">yum install librsvg2</div><div class="line"><span class="built_in">cd</span> /etc/yum.repos.d/</div><div class="line">wget http://download.opensuse.org/repositories/utilities/CentOS_6/utilities.repo</div><div class="line">yum install pngcrush</div><div class="line"><span class="built_in">cd</span> /home/kindle-weather-display/server/</div><div class="line">bash weather-script.sh</div><div class="line"></div><div class="line">mkfontscale</div><div class="line">mkfontdir</div><div class="line"> <span class="built_in">fc</span>-cache -fv</div><div class="line">http://103.79.76.44/kindle-weather-display/outpng/weather-script-output.png</div><div class="line"></div><div class="line">/mnt/us/weather/init-weather.sh</div><div class="line">vi /etc/crontab/root</div><div class="line"></div><div class="line">crontab</div><div class="line">*/15****/usr/sbin/checkpmond</div><div class="line">*/15****/usr/sbin/tinyrot</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info tmpfs</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info <span class="built_in">local</span>Vars</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info memusedump</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info powerdcheck</div><div class="line">*/2**** /mnt/us/weather/init-weather.sh</div><div class="line">/var/spool/cron/crontabs/root</div><div class="line">*/2**** /mnt/us/weather/init-weather.sh</div></pre></td></tr></table></figure>
 <p>问题比较多，暂时搁置；等待下次玩。<br>比如配置cron，更改系统只读属性，挂载；ssh连接；等。</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
