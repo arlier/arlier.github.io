@@ -257,6 +257,119 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/04/kindle越狱之旅2/" itemprop="url">
+                  kindle越狱之旅2
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-04T13:51:05+08:00" content="2016-12-04">
+              2016-12-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <h1 id="继续折腾"><a href="#继续折腾" class="headerlink" title="继续折腾"></a>继续折腾</h1><p>昨天发现kterm不能再kindle上用，本来打算就放弃了。我整这个的初衷就是要在kindle上开中断，其他越狱功能并没有特别大的兴趣。今天继续在网上看看有没有新的方案，发现了VNC连接的方法，感觉还是很有希望的~~</p>
+<h1 id="vnc也不好弄"><a href="#vnc也不好弄" class="headerlink" title="vnc也不好弄"></a>vnc也不好弄</h1><p>vnc貌似是全屏连接，具体参数还得好好研究，暂时搁置了。等下次有心情再来折腾吧。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/03/kindle越狱之旅/" itemprop="url">
                   kindle越狱之旅
                 </a>
@@ -1016,121 +1129,6 @@
               阅读全文 &raquo;
             </a>
           </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/23/树莓派ssh端口转发/" itemprop="url">
-                  树莓派ssh端口转发
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-23T01:46:53+08:00" content="2016-10-23">
-              2016-10-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p>为了在树莓派上工作，并且远程访问树莓派，我需要实现内网穿透。网上有好几种方案，比如花生壳，端口转发，开源的ngrok等。最后发现ssh的端口转发最方便；但缺点是不够稳定，需要继续添加脚本，使其在断开连接时检测并重启。具体实现方法：</p>
-<h2 id="树莓派上："><a href="#树莓派上：" class="headerlink" title="树莓派上："></a>树莓派上：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -N -f -R 2222:127.0.0.1:22 user@public-IP</div></pre></td></tr></table></figure>
-<h2 id="远程主机上："><a href="#远程主机上：" class="headerlink" title="远程主机上："></a>远程主机上：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -p 2222 pi@localhost</div></pre></td></tr></table></figure>
-<p>就能实现在外网上访问内网中的树莓派。<br>当然这样的链接的网速和稳定性都不太好，不适合长期使用。</p>
-
-          
         
       
     </div>
