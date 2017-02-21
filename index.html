@@ -257,6 +257,124 @@
             
               
                 
+                <a class="post-title-link" href="/2017/02/21/发现的乐趣/" itemprop="url">
+                  发现的乐趣
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-02-21T09:24:04+08:00" content="2017-02-21">
+              2017-02-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>从网上看到C.H.I.P单片机比较好玩，而且只要9$，果断弄来一个玩。可是它的视频输出只要复合的模拟信号，需要单独的转接器才能输出到HDMI或者VGA，而且这个转接器非常贵，想想还是用模拟输出吧反正我对显示几乎没有什么要求。</p>
+<h1 id="设置wifi"><a href="#设置wifi" class="headerlink" title="设置wifi"></a>设置wifi</h1><p>这个CHIP没有网线接口，只是内置了wifi模块，所以要通过ssh控制的话必须先连上wifi，这个只能通过显示器来操作。于是买了一根小米盒子的复合视频线，可是三个接头都不能连上，只是在插上红色的音频线之后会有某种连上的迹象，但完全看不清是什么。</p>
+<h2 id="开始尝试"><a href="#开始尝试" class="headerlink" title="开始尝试"></a>开始尝试</h2><p>最简单的想法就是可能电视出了问题，再换过各个接口并设设置各种模式之后我决定换个终端；在一台投影仪上测试后还是不行，这说明很可能是连接线的问题。于是到CHIP的官网上去查询，果然提到某些种类的线可能会不支持，因为这个3.5mm的线会有不同的定义。在进行了这些初步的尝试失败之后，我觉得应该进行一些进一步的验证了。</p>
+<h2 id="继续试验"><a href="#继续试验" class="headerlink" title="继续试验"></a>继续试验</h2><p><img src="http://o98383o2a.bkt.clouddn.com/videoline.JPG" alt=""><br>接着我打算看一下这根线的连通情况，发现它们使用一根公共地线然后分别成为一路；用万用表测出来是直接连通的，没有内部芯片，我意识到这个问题似乎很容易了。按照官网的连接示意图我很快发现我的这根线的定义和官网给出的不一样，这样问题很可能就是线的连接方式错了。</p>
+<h2 id="如何解决"><a href="#如何解决" class="headerlink" title="如何解决"></a>如何解决</h2><p>这种视频线的连接只有两根线，问题就非常简单了，我只要监测出复合端口上的两个对应出点再去分别和CHIP的出点试触就能很快找到正确接法。可是由于没有很好的工具，又不想使用电烙铁，就只好采用粗暴的办法，直接把连接线剪断。然后按照官网的连接图，交换两根线的连接一下子就好了！<br><img src="http://o98383o2a.bkt.clouddn.com/chip.jpg" alt=""></p>
+<h1 id="乐趣所在"><a href="#乐趣所在" class="headerlink" title="乐趣所在"></a>乐趣所在</h1><p>这样的问题一开始总是看起来很难，只有仔细地去思考和验证，找到其中可能的联系才渐渐地了解了其中的机理。也就是这样一步步的前进中，我发现了许多自己所不知道的东西，而最终解决了小小的问题正是这种发现带来的乐趣之一。</p>
+<p>这次连接再次让我意识到物理的神奇之处，那就是如果有一些异常出现，这背后一定隐藏着某些你还不了解的内部机制。因为物理学定律得到了如此广泛的验证，很难在以此不那么精密的观测中出现。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/02/20/The-Value-of-Science/" itemprop="url">
                   The-Value-of-Science
                 </a>
@@ -1026,131 +1144,11 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/26/PINE64内存卡更改分区大小/" itemprop="url">
-                  PINE64内存卡更改分区大小
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-26T11:09:08+08:00" content="2016-12-26">
-              2016-12-26
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p>昨天安装geant4的过程中发现磁盘不够用了，装了一天白费了；只能格式化内存卡进行重新分区。</p>
-<h1 id="调整PINE的内存卡分区"><a href="#调整PINE的内存卡分区" class="headerlink" title="调整PINE的内存卡分区"></a>调整PINE的内存卡分区</h1><p>参考文章 <a href="http://blog.csdn.net/c80486/article/details/8460304" target="_blank" rel="external">http://blog.csdn.net/c80486/article/details/8460304</a></p>
-<ul>
-<li>查看分区信息  sudo fdisk  /dev/mmcblk0   这是mmcblk0盘，有p0,p1两个分区<br>p0是boot分区，p1是系统分区。<br>我需要将p1的7个g改成30个g，因为我的内存卡是32g的。</li>
-<li>输入p，查看分区信息，记住linux分区p1的开始扇区位置，144860</li>
-<li>输入d再输入2，也就是删除linux分区</li>
-<li>输入n，新建分区，开始扇区选择144860（也就是linux的开始扇区），结束扇区选择默认的最大值</li>
-<li>输入w保存分区信息<br>重启，执行<code>sudo resize2fs /dev/mmcblk0p2</code>，就可以看到新的分区了，这个方法相对简单一些。</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
