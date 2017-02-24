@@ -257,6 +257,215 @@
             
               
                 
+                <a class="post-title-link" href="/2017/02/24/为了QT再次安装G4/" itemprop="url">
+                  为了QT再次安装G4
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-02-24T09:01:05+08:00" content="2017-02-24">
+              2017-02-24
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>参考 <a href="http://www.xuephp.com/main/detail.php?cid=33991" target="_blank" rel="external">http://www.xuephp.com/main/detail.php?cid=33991</a></p>
+<p>在g4build执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo cmake -DCMAKE_INSTALL_PREFIX=/home/debian/geant4/g4install -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_QT=ON -DQT_QMAKE_EXECUTABLE=/usr/qmake /home/debian/geant4/geant4.10.03</div><div class="line">sudo make</div></pre></td></tr></table></figure></p>
+<p>之前编译过，这次非常快。 主要是在进行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[ 84%] Generating basic/include/moc_G4UIQt.cpp</div><div class="line">Scanning dependencies of target G4interfaces</div><div class="line">Building CXX object source/interfaces/CMakeFiles/G4interfaces.dir/basic/src/G4UIQt.cc.o</div></pre></td></tr></table></figure></p>
+<p>这个make的过程是可以中断的，接着安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo make install</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/23/安装QT/" itemprop="url">
+                  安装QT
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-02-23T15:15:58+08:00" content="2017-02-23">
+              2017-02-23
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p>在Debian用下面的命令很快就安装成功了：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install qt5-qmake</div><div class="line">sudo apt-get install qtbase5-dev-tools</div><div class="line">sudo apt-get qt5-default qtcreator</div></pre></td></tr></table></figure></p>
+<p>QT可以鼠标界面交互，比OPENGL方便多了。对于一个普通用户来说，这种直观的方式更容易学习。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/02/21/发现的乐趣/" itemprop="url">
                   发现的乐趣
                 </a>
@@ -908,214 +1117,6 @@
 <li>echo -n “” &gt; access.log</li>
 <li>truncate -s 0 access.log<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><a href="http://www.tecmint.com/empty-delete-file-content-linux/" target="_blank" rel="external">http://www.tecmint.com/empty-delete-file-content-linux/</a></li>
 </ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/26/树莓派上运行GEANT4/" itemprop="url">
-                  树莓派上运行GEANT4
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-26T23:13:02+08:00" content="2016-12-26">
-              2016-12-26
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          <p><img src="http://o98383o2a.bkt.clouddn.com/pigeant41.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/b4arun.png" alt=""></p>
-<h1 id="竟然成功了"><a href="#竟然成功了" class="headerlink" title="竟然成功了"></a>竟然成功了</h1><p>经过一番努力和尝试，我真的在树莓派上运行了GEANT4，整个安装过程和ubuntu系统几乎一模一样，因为ubuntu也是基于Debian的。只是安装过程可能会出现一些意外，需要一一去解决。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/26/树莓派上运行GEANT4/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/26/正式学习SolidWorks/" itemprop="url">
-                  正式学习SolidWorks
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-26T22:59:19+08:00" content="2016-12-26">
-              2016-12-26
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p><img src="http://o98383o2a.bkt.clouddn.com/22.JPG" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/first.JPG" alt=""><br>安装了个2015的破解版，根据youtube上的视频学，看起来非常有意思。一直没找到合适的机会学习，现在来看这个软件真的很强大，很方便，而且学起来不难。软件对细节的处理很到位，适合精密的设计和开发；相比而言sketchup就是那种可以快速得到原型的软件。。</p>
 
           
         
