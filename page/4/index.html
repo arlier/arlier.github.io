@@ -257,6 +257,121 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/12/Geant4安装记录/" itemprop="url">
+                  Geant4安装记录
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-12T15:06:32+08:00" content="2016-12-12">
+              2016-12-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          <p><img src="http://geant4.cern.ch/applications/images/atlas.jpg" alt=""></p>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>很久之前就说要安装Geant4，一直拖到了现在。其实在百度上一搜就有大片的资料，安装起来的确没有看起来的那么麻烦。最可能的原因就是一直没有兴趣去做这件事，没有下定决心，总是被其他事务所干扰。其实作为一个用户，我们有理由相信这样的软件仅仅是一个工具，并不具有决定性的困难，至少有很多人都掌握了它的使用。既然如此，就好好装一回：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential</div><div class="line">sudo apt-get install cmake</div><div class="line">sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libxt-dev libxmu-dev libxi-dev zlib1g-dev libgl2ps-dev libexpat1-dev libxerces-c-dev</div><div class="line">mkdir geant4</div><div class="line"><span class="built_in">cd</span> geant4</div><div class="line">sudo wget http://geant4.cern.ch/support/<span class="built_in">source</span>/geant4.10.03.tar.gz</div><div class="line">sudo tar -zxf geant4.10.03.tar.gz</div><div class="line">sudo mkdir g4build</div><div class="line">sudo mkdir g4install</div><div class="line"><span class="built_in">cd</span> g4build</div><div class="line">sudo cmake -DCMAKE_INSTALL_PREFIX=/home/arlier/geant4/g4install -DGEANT4_USE_OPENGL_X11=ON /home/arlier/geant4/geant4.10.03</div><div class="line">sudo make -j2   make过程是可以中断的</div><div class="line">sudo make install</div><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/bin/</div><div class="line"><span class="built_in">source</span> ./geant4.sh</div></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/12/Geant4安装记录/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/08/安装gcc/" itemprop="url">
                   安装gcc
                 </a>
@@ -1013,119 +1128,6 @@
           
             <p>当我在写博客的时候，突然发现在屏幕中一个暗淡的影像，现在才下午3点可是阳光已经很弱了，但却有一种温暖的感觉。映在屏幕里的阳光不禁让我想起来两个月前的夏天，那时候天气很热，阳光刺眼我总会拉上窗帘；而现在我竟然发现这很美。<br><img src="http://o98383o2a.bkt.clouddn.com/sunshine.jpg" alt=""></p>
 <p>也许我过于关注屏幕上特定的图案，而忽略了大自然最nature的那些东西。比如屏幕上的光场其实是一个很复杂的分布，我们仅仅提取了其中很有限的一部分。而这些和我们眼睛发生共振的光子并不比其他光子又更为独特的分布或者特性；一切的可识别仅仅是一种建立在探测器的响应范围内的约定。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/30/第一次使用git/" itemprop="url">
-                  第一次使用git
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-30T14:42:30+08:00" content="2016-11-30">
-              2016-11-30
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <p>接触github好几年了，中间断断续续的，平时也就是看看别人的项目，或者clone一些东西。有几次在linux按照教程传了一些东西，没过多久就又忘记了。。。然后又得重新再找一次教程。于是决定在我的博客记录一下，这样以后用起来方便一些。<br><img src="http://o98383o2a.bkt.clouddn.com/gitico7.png" alt=""></p>
-<h1 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h1> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git init  初始化</div><div class="line">git add .</div><div class="line">git commit -m <span class="string">"xxxxx"</span>  </div><div class="line">git remote add origin git@github.com:xuhongxin/deom.git    </div><div class="line">git pull origin master</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
 
           
         
