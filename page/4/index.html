@@ -257,6 +257,121 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/13/Geant4安装2/" itemprop="url">
+                  Geant4安装2
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-13T13:19:35+08:00" content="2016-12-13">
+              2016-12-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        
+          
+            <p><img src="http://o98383o2a.bkt.clouddn.com/g4B1.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/g4hadrontherapy.jpg" alt=""><br>昨天初步完成了G4的安装，接着运行一下examples检验一下程序</p>
+<h1 id="根据之前data文件夹配置环境变量："><a href="#根据之前data文件夹配置环境变量：" class="headerlink" title="根据之前data文件夹配置环境变量："></a>根据之前data文件夹配置环境变量：</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> G4LEVELGAMMADATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/PhotonEvaporation4.3</div><div class="line"><span class="built_in">export</span> G4NEUTRONXSDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/G4NEUTRONXS1.4</div><div class="line"><span class="built_in">export</span> G4LEDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/G4EMLOW6.50</div><div class="line"><span class="built_in">export</span> G4NEUTRONHPDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/G4NDL4.5</div><div class="line"><span class="built_in">export</span> G4ENSDFSTATEDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/G4ENSDFSTATE2.1</div><div class="line"><span class="built_in">export</span> G4RADIOACTIVEDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/RadioactiveDecay5.1</div><div class="line"><span class="built_in">export</span> G4ABLADATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/G4ABLA3.0</div><div class="line"><span class="built_in">export</span> G4PIIDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/G4PII1.3</div><div class="line"><span class="built_in">export</span> G4SAIDXSDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/G4SAIDDATA1.1</div><div class="line"><span class="built_in">export</span> G4REALSURFACEDATA=/home/pi/geant4/g4install/share/Geant4-10.3.0/data/RealSurface1.0</div></pre></td></tr></table></figure>
+<h1 id="继续安装"><a href="#继续安装" class="headerlink" title="继续安装"></a>继续安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo mkdir buildB1</div><div class="line"><span class="built_in">cd</span> buildB1</div><div class="line"><span class="built_in">source</span> /home/arlier/geant4/g4install/share/Geant4-10.3.0/geant4make/geant4make.sh</div><div class="line"><span class="comment"># /*cmake编译：  */</span></div><div class="line"> sudo cmake -DGeant4_DIR=/home/pi/geant4/g4install/lib/Geant4-10.3.0 /home/pi/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line"> <span class="built_in">cd</span> ../</div><div class="line">sudo make -j4</div><div class="line"><span class="comment">## 出现错误</span></div><div class="line">libGL error: No matching fbConfigs or visuals found</div><div class="line">libGL error: failed to load driver: swrast</div><div class="line"><span class="comment">## 寻找解决方案</span></div><div class="line">http://askubuntu.com/questions/541343/problems-with-libgl-fbconfigs-swrast-through-each-update</div><div class="line"><span class="comment">## 按照上面的帖子继续：</span></div><div class="line"><span class="built_in">export</span> LIBGL_DEBUG=verbose</div><div class="line">sudo apt install mesa-utils</div><div class="line">glxgears</div><div class="line">虽然这个回复是-2，但在我的电脑上好使 sudo apt-get install nvidia-331</div><div class="line">总算是运行成功了！</div></pre></td></tr></table></figure>
+<p>参考 <a href="http://blog.sina.com.cn/s/blog_5e73a8fc0102v7dd.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_5e73a8fc0102v7dd.html</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/13/导航页面/" itemprop="url">
                   导航页面
                 </a>
@@ -1007,129 +1122,6 @@
           
             <h1 id="继续折腾"><a href="#继续折腾" class="headerlink" title="继续折腾"></a>继续折腾</h1><p>昨天发现kterm不能再kindle上用，本来打算就放弃了。我整这个的初衷就是要在kindle上开中断，其他越狱功能并没有特别大的兴趣。今天继续在网上看看有没有新的方案，发现了VNC连接的方法，感觉还是很有希望的~~</p>
 <h1 id="vnc也不好弄"><a href="#vnc也不好弄" class="headerlink" title="vnc也不好弄"></a>vnc也不好弄</h1><p>vnc貌似是全屏连接，具体参数还得好好研究，暂时搁置了。等下次有心情再来折腾吧。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/03/kindle越狱之旅/" itemprop="url">
-                  kindle越狱之旅
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-03T19:35:04+08:00" content="2016-12-03">
-              2016-12-03
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/share/" itemprop="url" rel="index">
-                    <span itemprop="name">share</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-      
-      
-
-      
-        
-          
-            <h1 id="为什么要越狱"><a href="#为什么要越狱" class="headerlink" title="为什么要越狱"></a>为什么要越狱</h1><p><img src="http://o98383o2a.bkt.clouddn.com/kindlezsh.jpg" alt=""><br>在<a href="http://shumeipai.nxez.com/2016/05/14/equipped-with-electronic-paper-screens-pumping-tray.html" target="_blank" rel="external">树莓派实验室</a>上看到一篇帖子，用树莓派驱动墨水屏显示，感觉真心不错，也想学着做一个。然后继续浏览发现了<a href="http://shumeipai.nxez.com/2013/10/10/raspberry-pi-pick-kindle-display.html" target="_blank" rel="external">这个帖子</a>感觉非常有意思，竟然可以用kindle当显示器，非常适合装逼啊。而且墨水屏的效果实在是好，不费眼睛，这根本忍不住要玩一玩~</p>
-<h1 id="开始越狱吧"><a href="#开始越狱吧" class="headerlink" title="开始越狱吧"></a>开始越狱吧</h1><p>上面帖子的kindle型号是kindle3，我手里没有，在淘宝搜了一下大约￥200，想想还是挺多的。于是决定冒险把我的new kindle给越狱了，虽然有些冒险。。。。</p>
-<h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p> 在网上搜到好几个相关的帖子</p>
-<ul>
-<li><a href="https://kindlefere.com/post/311.html" target="_blank" rel="external">https://kindlefere.com/post/311.html</a></li>
-<li><a href="https://kindlefere.com/post/410.html" target="_blank" rel="external">https://kindlefere.com/post/410.html</a></li>
-<li><a href="http://bbs.eeworld.com.cn/thread-437615-1-1.html" target="_blank" rel="external">http://bbs.eeworld.com.cn/thread-437615-1-1.html</a></li>
-<li><a href="http://ju.outofmemory.cn/entry/61084" target="_blank" rel="external">http://ju.outofmemory.cn/entry/61084</a></li>
-<li><a href="http://blog.chinaunix.net/uid-25906175-id-3354801.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-25906175-id-3354801.html</a><br>尤其是<a href="https://kindlefere.com/" target="_blank" rel="external">kindle伴侣</a>这个网站非常不错！</li>
-</ul>
-<h2 id="顺利越狱"><a href="#顺利越狱" class="headerlink" title="顺利越狱"></a>顺利越狱</h2><p> 按照帖子上的教程进行降级，改固件，安装插件很快就能越狱成功，也没有出现什么意外情况。<br> 安装插件USBNET，添加秘钥就可以内网ssh访问了。发现自带的zsh非常炫，果然是专业玩家啊。</p>
-<h1 id="安装terminal"><a href="#安装terminal" class="headerlink" title="安装terminal"></a>安装terminal</h1><p>终于到了最后的见证结果的时候了，按照教程安装Extend和Kterm就行了。<br>折腾了几个小时，然而插件不支持kindle7,这下麻烦了。</p>
 
           
         
