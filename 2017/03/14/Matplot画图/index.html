@@ -1,0 +1,551 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="matplot," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="安装环境python 12sudo apt-get install python-numpysudo apt-get install python-matplotlib
+ 要显示中文在windows不太好弄，在linux设置字体和编码就可以了。 1234567891011121314151617181920212223242526272829303132333435363738394041424">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matplot画图">
+<meta property="og:url" content="http://yoursite.com/2017/03/14/Matplot画图/index.html">
+<meta property="og:site_name" content="mapping the observed world to our imagination">
+<meta property="og:description" content="安装环境python 12sudo apt-get install python-numpysudo apt-get install python-matplotlib
+ 要显示中文在windows不太好弄，在linux设置字体和编码就可以了。 1234567891011121314151617181920212223242526272829303132333435363738394041424">
+<meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/patplot.png">
+<meta property="og:updated_time" content="2017-03-13T17:08:57.267Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Matplot画图">
+<meta name="twitter:description" content="安装环境python 12sudo apt-get install python-numpysudo apt-get install python-matplotlib
+ 要显示中文在windows不太好弄，在linux设置字体和编码就可以了。 1234567891011121314151617181920212223242526272829303132333435363738394041424">
+<meta name="twitter:image" content="http://o98383o2a.bkt.clouddn.com/patplot.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/14/Matplot画图/"/>
+
+  <title> Matplot画图 | mapping the observed world to our imagination </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">mapping the observed world to our imagination</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">To find something out, arlier!</p>
+  <script type="text/javascript" src="/js/arlier.js" id="mymouse"></script>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            ⛪首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            ⚛分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            ♞归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-work">
+          <a href="http://www.arlier.site" rel="section">
+            
+            ☃工作
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            ⛹关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-gallery">
+          <a href="/xiangce/xiangce" rel="section">
+            
+            ⛷相册
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-daohang">
+          <a href="/daohang/daohang" rel="section">
+            
+            ☕网址
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Matplot画图
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-14T00:59:48+08:00" content="2017-03-14">
+              2017-03-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/share/" itemprop="url" rel="index">
+                    <span itemprop="name">share</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+      
+
+      
+        <p><img src="http://o98383o2a.bkt.clouddn.com/patplot.png" alt=""></p>
+<h1 id="安装环境python"><a href="#安装环境python" class="headerlink" title="安装环境python"></a>安装环境python</h1> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python-numpy</div><div class="line">sudo apt-get install python-matplotlib</div></pre></td></tr></table></figure>
+<p> 要显示中文在windows不太好弄，在linux设置字体和编码就可以了。<br> <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#-*- coding: utf-8 -*-</span></div><div class="line"><span class="string">"""</span></div><div class="line">==========</div><div class="line">matplotlib</div><div class="line">==========</div><div class="line"></div><div class="line">Thanks to Tony Yu &lt;tsyu80@gmail.com&gt; for the logo design</div><div class="line">"""</div><div class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> matplotlib,mpl</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><span class="keyword">import</span> matplotlib <span class="keyword">as</span> mpl</div><div class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div><div class="line"><span class="keyword">import</span> matplotlib.cm <span class="keyword">as</span> cm</div><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> FontManager</div><div class="line"><span class="keyword">import</span> subprocess</div><div class="line">myfont = matplotlib.font_manager.FontProperties(fname=<span class="string">'/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf'</span>)</div><div class="line"><span class="comment"># mpl.rcParams['axes.unicode_minus'] = False</span></div><div class="line"><span class="comment"># pi = 3.1415926</span></div><div class="line"><span class="comment"># t = np.arange(-5*pi, 5*pi, 0.01)</span></div><div class="line"><span class="comment"># y = np.sin(t)/t</span></div><div class="line"><span class="comment"># plt.plot(t, y)</span></div><div class="line"><span class="comment"># plt.title(u'这里写的是中文',fontproperties=myfont) #指定字体</span></div><div class="line"><span class="comment"># plt.xlabel(u'X坐标',fontproperties=myfont)</span></div><div class="line"><span class="comment"># plt.ylabel(u'Y坐标',fontproperties=myfont)</span></div><div class="line"><span class="comment"># plt.show()</span></div><div class="line">mpl.rcParams[<span class="string">'xtick.labelsize'</span>] = <span class="number">10</span></div><div class="line">mpl.rcParams[<span class="string">'ytick.labelsize'</span>] = <span class="number">12</span></div><div class="line">mpl.rcParams[<span class="string">'axes.edgecolor'</span>] = <span class="string">'gray'</span></div><div class="line"></div><div class="line">axalpha = <span class="number">0.05</span></div><div class="line">figcolor = <span class="string">'white'</span></div><div class="line">dpi = <span class="number">80</span></div><div class="line">fig = plt.figure(figsize=(<span class="number">6</span>, <span class="number">1.1</span>), dpi=dpi)</div><div class="line">fig.figurePatch.set_edgecolor(figcolor)</div><div class="line">fig.figurePatch.set_facecolor(figcolor)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_math_background</span><span class="params">()</span>:</span></div><div class="line">    ax = fig.add_axes([<span class="number">0.</span>, <span class="number">0.</span>, <span class="number">1.</span>, <span class="number">1.</span>])</div><div class="line"></div><div class="line">    text = []</div><div class="line">    text.append(</div><div class="line">        (<span class="string">r"$W^&#123;3\beta&#125;_&#123;\delta_1 \rho_1 \sigma_2&#125; = "</span></div><div class="line">         <span class="string">r"U^&#123;3\beta&#125;_&#123;\delta_1 \rho_1&#125; + \frac&#123;1&#125;&#123;8 \pi 2&#125;"</span></div><div class="line">         <span class="string">r"\int^&#123;\alpha_2&#125;_&#123;\alpha_2&#125; d \alpha^\prime_2 "</span></div><div class="line">         <span class="string">r"\left[\frac&#123; U^&#123;2\beta&#125;_&#123;\delta_1 \rho_1&#125; - "</span></div><div class="line">         <span class="string">r"\alpha^\prime_2U^&#123;1\beta&#125;_&#123;\rho_1 \sigma_2&#125; "</span></div><div class="line">         <span class="string">r"&#125;&#123;U^&#123;0\beta&#125;_&#123;\rho_1 \sigma_2&#125;&#125;\right]$"</span>, (<span class="number">0.7</span>, <span class="number">0.2</span>), <span class="number">20</span>))</div><div class="line">    text.append((<span class="string">r"$\frac&#123;d\rho&#125;&#123;d t&#125; + \rho \vec&#123;v&#125;\cdot\nabla\vec&#123;v&#125; "</span></div><div class="line">                 <span class="string">r"= -\nabla p + \mu\nabla^2 \vec&#123;v&#125; + \rho \vec&#123;g&#125;$"</span>,</div><div class="line">                 (<span class="number">0.35</span>, <span class="number">0.9</span>), <span class="number">20</span>))</div><div class="line">    text.append((<span class="string">r"$\int_&#123;-\infty&#125;^\infty e^&#123;-x^2&#125;dx=\sqrt&#123;\pi&#125;$"</span>,</div><div class="line">                 (<span class="number">0.15</span>, <span class="number">0.3</span>), <span class="number">25</span>))</div><div class="line">    text.append((<span class="string">r"$F_G = G\frac&#123;m_1m_2&#125;&#123;r^2&#125;$"</span>,</div><div class="line">                 (<span class="number">0.85</span>, <span class="number">0.7</span>), <span class="number">30</span>))</div><div class="line">    <span class="keyword">for</span> eq, (x, y), size <span class="keyword">in</span> text:</div><div class="line">        ax.text(x, y, eq, ha=<span class="string">'center'</span>, va=<span class="string">'center'</span>, color=<span class="string">"#11557c"</span>,</div><div class="line">                alpha=<span class="number">0.25</span>, transform=ax.transAxes, fontsize=size)</div><div class="line">    ax.set_axis_off()</div><div class="line">    <span class="keyword">return</span> ax</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_matplotlib_text</span><span class="params">(ax)</span>:</span></div><div class="line">    ax.text(<span class="number">0.95</span>, <span class="number">0.5</span>,<span class="string">u'我的第一张ｍａｔｐｌｏｔ的图'</span>,fontproperties=myfont, color=<span class="string">'#11557c'</span>, fontsize=<span class="number">15</span>,</div><div class="line">            ha=<span class="string">'right'</span>, va=<span class="string">'center'</span>, alpha=<span class="number">1.0</span>, transform=ax.transAxes)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_polar_bar</span><span class="params">()</span>:</span></div><div class="line">    ax = fig.add_axes([<span class="number">0.025</span>, <span class="number">0.075</span>, <span class="number">0.2</span>, <span class="number">0.85</span>], projection=<span class="string">'polar'</span>)</div><div class="line"></div><div class="line">    ax.axesPatch.set_alpha(axalpha)</div><div class="line">    ax.set_axisbelow(<span class="keyword">True</span>)</div><div class="line">    N = <span class="number">7</span></div><div class="line">    arc = <span class="number">2.</span> * np.pi</div><div class="line">    theta = np.arange(<span class="number">0.0</span>, arc, arc/N)</div><div class="line">    radii = <span class="number">10</span> * np.array([<span class="number">0.2</span>, <span class="number">0.6</span>, <span class="number">0.8</span>, <span class="number">0.7</span>, <span class="number">0.4</span>, <span class="number">0.5</span>, <span class="number">0.8</span>])</div><div class="line">    width = np.pi / <span class="number">4</span> * np.array([<span class="number">0.4</span>, <span class="number">0.4</span>, <span class="number">0.6</span>, <span class="number">0.8</span>, <span class="number">0.2</span>, <span class="number">0.5</span>, <span class="number">0.3</span>])</div><div class="line">    bars = ax.bar(theta, radii, width=width, bottom=<span class="number">0.0</span>)</div><div class="line">    <span class="keyword">for</span> r, bar <span class="keyword">in</span> zip(radii, bars):</div><div class="line">        bar.set_facecolor(cm.jet(r/<span class="number">10.</span>))</div><div class="line">        bar.set_alpha(<span class="number">0.6</span>)</div><div class="line"></div><div class="line">    <span class="keyword">for</span> label <span class="keyword">in</span> ax.get_xticklabels() + ax.get_yticklabels():</div><div class="line">        label.set_visible(<span class="keyword">True</span>)</div><div class="line"></div><div class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> ax.get_ygridlines() + ax.get_xgridlines():</div><div class="line">        line.set_lw(<span class="number">0.8</span>)</div><div class="line">        line.set_alpha(<span class="number">0.9</span>)</div><div class="line">        line.set_ls(<span class="string">'-'</span>)</div><div class="line">        line.set_color(<span class="string">'0.5'</span>)</div><div class="line"></div><div class="line">    ax.set_yticks(np.arange(<span class="number">1</span>, <span class="number">9</span>, <span class="number">2</span>))</div><div class="line">    ax.set_rmax(<span class="number">9</span>)</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    main_axes = add_math_background()</div><div class="line">    add_polar_bar()</div><div class="line">    add_matplotlib_text(main_axes)</div><div class="line">    plt.show()</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果您认为这篇文章对您有所帮助，请支持！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://7xsihg.com1.z0.glb.clouddn.com/arlierweixin.jpg" alt="arlier WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://7xsihg.com1.z0.glb.clouddn.com/arlierpay.jpg" alt="arlier Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/matplot/" rel="tag">#matplot</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/08/无能者无所求/" rel="next" title="无能者无所求">
+                <i class="fa fa-chevron-left"></i> 无能者无所求
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">arlier</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://arlier.work">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  🍉 -
+  <a class="theme-link" >
+    pseudo-weigher of neutrino
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+
+</body>
+</html>
